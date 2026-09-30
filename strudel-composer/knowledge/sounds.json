@@ -1,0 +1,6227 @@
+{
+ "builtin": {
+  "synths": [
+   "brown",
+   "bytebeat",
+   "crackle",
+   "one",
+   "pink",
+   "pulse",
+   "saw",
+   "sawtooth",
+   "sbd",
+   "sin",
+   "sine",
+   "sqr",
+   "square",
+   "supersaw",
+   "tri",
+   "triangle",
+   "user",
+   "white",
+   "z_noise",
+   "z_sawtooth",
+   "z_sine",
+   "z_square",
+   "z_tan",
+   "z_triangle",
+   "zzfx"
+  ],
+  "soundfonts": [
+   "gm_accordion",
+   "gm_acoustic_bass",
+   "gm_acoustic_guitar_nylon",
+   "gm_acoustic_guitar_steel",
+   "gm_agogo",
+   "gm_alto_sax",
+   "gm_applause",
+   "gm_bagpipe",
+   "gm_bandoneon",
+   "gm_banjo",
+   "gm_baritone_sax",
+   "gm_bassoon",
+   "gm_bird_tweet",
+   "gm_blown_bottle",
+   "gm_brass_section",
+   "gm_breath_noise",
+   "gm_celesta",
+   "gm_cello",
+   "gm_choir_aahs",
+   "gm_church_organ",
+   "gm_clarinet",
+   "gm_clavinet",
+   "gm_contrabass",
+   "gm_distortion_guitar",
+   "gm_drawbar_organ",
+   "gm_dulcimer",
+   "gm_electric_bass_finger",
+   "gm_electric_bass_pick",
+   "gm_electric_guitar_clean",
+   "gm_electric_guitar_jazz",
+   "gm_electric_guitar_muted",
+   "gm_english_horn",
+   "gm_epiano1",
+   "gm_epiano2",
+   "gm_fiddle",
+   "gm_flute",
+   "gm_french_horn",
+   "gm_fretless_bass",
+   "gm_fx_atmosphere",
+   "gm_fx_brightness",
+   "gm_fx_crystal",
+   "gm_fx_echoes",
+   "gm_fx_goblins",
+   "gm_fx_rain",
+   "gm_fx_sci_fi",
+   "gm_fx_soundtrack",
+   "gm_glockenspiel",
+   "gm_guitar_fret_noise",
+   "gm_guitar_harmonics",
+   "gm_gunshot",
+   "gm_harmonica",
+   "gm_harpsichord",
+   "gm_helicopter",
+   "gm_kalimba",
+   "gm_koto",
+   "gm_lead_1_square",
+   "gm_lead_2_sawtooth",
+   "gm_lead_3_calliope",
+   "gm_lead_4_chiff",
+   "gm_lead_5_charang",
+   "gm_lead_6_voice",
+   "gm_lead_7_fifths",
+   "gm_lead_8_bass_lead",
+   "gm_marimba",
+   "gm_melodic_tom",
+   "gm_music_box",
+   "gm_muted_trumpet",
+   "gm_oboe",
+   "gm_ocarina",
+   "gm_orchestra_hit",
+   "gm_orchestral_harp",
+   "gm_overdriven_guitar",
+   "gm_pad_bowed",
+   "gm_pad_choir",
+   "gm_pad_halo",
+   "gm_pad_metallic",
+   "gm_pad_new_age",
+   "gm_pad_poly",
+   "gm_pad_sweep",
+   "gm_pad_warm",
+   "gm_pan_flute",
+   "gm_percussive_organ",
+   "gm_piano",
+   "gm_piccolo",
+   "gm_pizzicato_strings",
+   "gm_recorder",
+   "gm_reed_organ",
+   "gm_reverse_cymbal",
+   "gm_rock_organ",
+   "gm_seashore",
+   "gm_shakuhachi",
+   "gm_shamisen",
+   "gm_shanai",
+   "gm_sitar",
+   "gm_slap_bass_1",
+   "gm_slap_bass_2",
+   "gm_soprano_sax",
+   "gm_steel_drums",
+   "gm_string_ensemble_1",
+   "gm_string_ensemble_2",
+   "gm_synth_bass_1",
+   "gm_synth_bass_2",
+   "gm_synth_brass_1",
+   "gm_synth_brass_2",
+   "gm_synth_choir",
+   "gm_synth_drum",
+   "gm_synth_strings_1",
+   "gm_synth_strings_2",
+   "gm_taiko_drum",
+   "gm_telephone",
+   "gm_tenor_sax",
+   "gm_timpani",
+   "gm_tinkle_bell",
+   "gm_tremolo_strings",
+   "gm_trombone",
+   "gm_trumpet",
+   "gm_tuba",
+   "gm_tubular_bells",
+   "gm_vibraphone",
+   "gm_viola",
+   "gm_violin",
+   "gm_voice_oohs",
+   "gm_whistle",
+   "gm_woodblock",
+   "gm_xylophone"
+  ],
+  "samples": [
+   {
+    "name": "agogo",
+    "count": 5,
+    "pitched": false
+   },
+   {
+    "name": "anvil",
+    "count": 9,
+    "pitched": false
+   },
+   {
+    "name": "ardha",
+    "count": 20,
+    "pitched": false
+   },
+   {
+    "name": "balafon",
+    "count": 6,
+    "pitched": true
+   },
+   {
+    "name": "balafon_hard",
+    "count": 6,
+    "pitched": true
+   },
+   {
+    "name": "balafon_soft",
+    "count": 6,
+    "pitched": true
+   },
+   {
+    "name": "ballwhistle",
+    "count": 2,
+    "pitched": false
+   },
+   {
+    "name": "bassdrum1",
+    "count": 8,
+    "pitched": false
+   },
+   {
+    "name": "bassdrum2",
+    "count": 30,
+    "pitched": false
+   },
+   {
+    "name": "bd",
+    "count": 8,
+    "pitched": false
+   },
+   {
+    "name": "belltree",
+    "count": 6,
+    "pitched": true
+   },
+   {
+    "name": "bongo",
+    "count": 28,
+    "pitched": false
+   },
+   {
+    "name": "brakedrum",
+    "count": 17,
+    "pitched": false
+   },
+   {
+    "name": "brk",
+    "count": 1,
+    "pitched": false
+   },
+   {
+    "name": "cabasa",
+    "count": 6,
+    "pitched": false
+   },
+   {
+    "name": "cajon",
+    "count": 18,
+    "pitched": false
+   },
+   {
+    "name": "casio",
+    "count": 3,
+    "pitched": false
+   },
+   {
+    "name": "cb",
+    "count": 1,
+    "pitched": false
+   },
+   {
+    "name": "chaapu",
+    "count": 13,
+    "pitched": false
+   },
+   {
+    "name": "clap",
+    "count": 10,
+    "pitched": false
+   },
+   {
+    "name": "clash",
+    "count": 10,
+    "pitched": false
+   },
+   {
+    "name": "clash2",
+    "count": 5,
+    "pitched": false
+   },
+   {
+    "name": "clave",
+    "count": 6,
+    "pitched": false
+   },
+   {
+    "name": "clavisynth",
+    "count": 19,
+    "pitched": true
+   },
+   {
+    "name": "conga",
+    "count": 34,
+    "pitched": false
+   },
+   {
+    "name": "cowbell",
+    "count": 13,
+    "pitched": false
+   },
+   {
+    "name": "cp",
+    "count": 2,
+    "pitched": false
+   },
+   {
+    "name": "cr",
+    "count": 2,
+    "pitched": false
+   },
+   {
+    "name": "crow",
+    "count": 4,
+    "pitched": false
+   },
+   {
+    "name": "dantranh",
+    "count": 17,
+    "pitched": true
+   },
+   {
+    "name": "dantranh_tremolo",
+    "count": 16,
+    "pitched": true
+   },
+   {
+    "name": "dantranh_vibrato",
+    "count": 16,
+    "pitched": true
+   },
+   {
+    "name": "darbuka",
+    "count": 20,
+    "pitched": false
+   },
+   {
+    "name": "dhi",
+    "count": 7,
+    "pitched": false
+   },
+   {
+    "name": "dhin",
+    "count": 8,
+    "pitched": false
+   },
+   {
+    "name": "dhum",
+    "count": 7,
+    "pitched": false
+   },
+   {
+    "name": "didgeridoo",
+    "count": 12,
+    "pitched": false
+   },
+   {
+    "name": "east",
+    "count": 9,
+    "pitched": false
+   },
+   {
+    "name": "fingercymbal",
+    "count": 1,
+    "pitched": false
+   },
+   {
+    "name": "flexatone",
+    "count": 8,
+    "pitched": false
+   },
+   {
+    "name": "fmpiano",
+    "count": 22,
+    "pitched": true
+   },
+   {
+    "name": "folkharp",
+    "count": 29,
+    "pitched": true
+   },
+   {
+    "name": "framedrum",
+    "count": 18,
+    "pitched": false
+   },
+   {
+    "name": "glockenspiel",
+    "count": 7,
+    "pitched": true
+   },
+   {
+    "name": "gong",
+    "count": 7,
+    "pitched": false
+   },
+   {
+    "name": "gong2",
+    "count": 6,
+    "pitched": false
+   },
+   {
+    "name": "guiro",
+    "count": 5,
+    "pitched": false
+   },
+   {
+    "name": "gumki",
+    "count": 14,
+    "pitched": false
+   },
+   {
+    "name": "handbells",
+    "count": 3,
+    "pitched": false
+   },
+   {
+    "name": "handchimes",
+    "count": 19,
+    "pitched": true
+   },
+   {
+    "name": "harmonica",
+    "count": 9,
+    "pitched": true
+   },
+   {
+    "name": "harmonica_soft",
+    "count": 10,
+    "pitched": true
+   },
+   {
+    "name": "harmonica_vib",
+    "count": 10,
+    "pitched": true
+   },
+   {
+    "name": "harp",
+    "count": 23,
+    "pitched": true
+   },
+   {
+    "name": "hh",
+    "count": 5,
+    "pitched": false
+   },
+   {
+    "name": "hihat",
+    "count": 15,
+    "pitched": false
+   },
+   {
+    "name": "ht",
+    "count": 1,
+    "pitched": false
+   },
+   {
+    "name": "insect",
+    "count": 3,
+    "pitched": false
+   },
+   {
+    "name": "jazz",
+    "count": 8,
+    "pitched": false
+   },
+   {
+    "name": "ka",
+    "count": 12,
+    "pitched": false
+   },
+   {
+    "name": "kalimba",
+    "count": 11,
+    "pitched": true
+   },
+   {
+    "name": "kalimba2",
+    "count": 25,
+    "pitched": true
+   },
+   {
+    "name": "kalimba3",
+    "count": 22,
+    "pitched": true
+   },
+   {
+    "name": "kalimba4",
+    "count": 22,
+    "pitched": true
+   },
+   {
+    "name": "kalimba5",
+    "count": 14,
+    "pitched": true
+   },
+   {
+    "name": "kawai",
+    "count": 37,
+    "pitched": true
+   },
+   {
+    "name": "ki",
+    "count": 7,
+    "pitched": false
+   },
+   {
+    "name": "lt",
+    "count": 1,
+    "pitched": false
+   },
+   {
+    "name": "marimba",
+    "count": 10,
+    "pitched": true
+   },
+   {
+    "name": "marktrees",
+    "count": 6,
+    "pitched": false
+   },
+   {
+    "name": "metal",
+    "count": 10,
+    "pitched": false
+   },
+   {
+    "name": "misc",
+    "count": 5,
+    "pitched": false
+   },
+   {
+    "name": "mt",
+    "count": 1,
+    "pitched": false
+   },
+   {
+    "name": "na",
+    "count": 12,
+    "pitched": false
+   },
+   {
+    "name": "nam",
+    "count": 8,
+    "pitched": false
+   },
+   {
+    "name": "numbers",
+    "count": 9,
+    "pitched": false
+   },
+   {
+    "name": "oberheimdmx_",
+    "count": 3,
+    "pitched": false
+   },
+   {
+    "name": "ocarina",
+    "count": 11,
+    "pitched": true
+   },
+   {
+    "name": "ocarina_small",
+    "count": 10,
+    "pitched": true
+   },
+   {
+    "name": "ocarina_small_stacc",
+    "count": 13,
+    "pitched": true
+   },
+   {
+    "name": "ocarina_vib",
+    "count": 10,
+    "pitched": true
+   },
+   {
+    "name": "oceandrum",
+    "count": 3,
+    "pitched": false
+   },
+   {
+    "name": "oh",
+    "count": 4,
+    "pitched": false
+   },
+   {
+    "name": "organ_4inch",
+    "count": 27,
+    "pitched": true
+   },
+   {
+    "name": "organ_8inch",
+    "count": 27,
+    "pitched": true
+   },
+   {
+    "name": "organ_full",
+    "count": 27,
+    "pitched": true
+   },
+   {
+    "name": "piano",
+    "count": 29,
+    "pitched": true
+   },
+   {
+    "name": "piano1",
+    "count": 22,
+    "pitched": true
+   },
+   {
+    "name": "pipeorgan_loud",
+    "count": 21,
+    "pitched": true
+   },
+   {
+    "name": "pipeorgan_loud_pedal",
+    "count": 11,
+    "pitched": true
+   },
+   {
+    "name": "pipeorgan_quiet",
+    "count": 21,
+    "pitched": true
+   },
+   {
+    "name": "pipeorgan_quiet_pedal",
+    "count": 11,
+    "pitched": true
+   },
+   {
+    "name": "psaltery_bow",
+    "count": 11,
+    "pitched": true
+   },
+   {
+    "name": "psaltery_pluck",
+    "count": 11,
+    "pitched": true
+   },
+   {
+    "name": "psaltery_spiccato",
+    "count": 11,
+    "pitched": true
+   },
+   {
+    "name": "ratchet",
+    "count": 8,
+    "pitched": false
+   },
+   {
+    "name": "rd",
+    "count": 1,
+    "pitched": false
+   },
+   {
+    "name": "recorder_alto_stacc",
+    "count": 12,
+    "pitched": true
+   },
+   {
+    "name": "recorder_alto_sus",
+    "count": 12,
+    "pitched": true
+   },
+   {
+    "name": "recorder_alto_vib",
+    "count": 12,
+    "pitched": true
+   },
+   {
+    "name": "recorder_bass_stacc",
+    "count": 15,
+    "pitched": true
+   },
+   {
+    "name": "recorder_bass_sus",
+    "count": 12,
+    "pitched": true
+   },
+   {
+    "name": "recorder_bass_vib",
+    "count": 14,
+    "pitched": true
+   },
+   {
+    "name": "recorder_soprano_stacc",
+    "count": 12,
+    "pitched": true
+   },
+   {
+    "name": "recorder_soprano_sus",
+    "count": 13,
+    "pitched": true
+   },
+   {
+    "name": "recorder_tenor_stacc",
+    "count": 12,
+    "pitched": true
+   },
+   {
+    "name": "recorder_tenor_sus",
+    "count": 13,
+    "pitched": true
+   },
+   {
+    "name": "recorder_tenor_vib",
+    "count": 14,
+    "pitched": true
+   },
+   {
+    "name": "rim",
+    "count": 2,
+    "pitched": false
+   },
+   {
+    "name": "sax",
+    "count": 23,
+    "pitched": true
+   },
+   {
+    "name": "sax_stacc",
+    "count": 23,
+    "pitched": true
+   },
+   {
+    "name": "sax_vib",
+    "count": 19,
+    "pitched": true
+   },
+   {
+    "name": "saxello",
+    "count": 8,
+    "pitched": true
+   },
+   {
+    "name": "saxello_stacc",
+    "count": 8,
+    "pitched": true
+   },
+   {
+    "name": "saxello_vib",
+    "count": 8,
+    "pitched": true
+   },
+   {
+    "name": "sd",
+    "count": 5,
+    "pitched": false
+   },
+   {
+    "name": "sh",
+    "count": 1,
+    "pitched": false
+   },
+   {
+    "name": "shaker_large",
+    "count": 6,
+    "pitched": false
+   },
+   {
+    "name": "shaker_small",
+    "count": 16,
+    "pitched": false
+   },
+   {
+    "name": "siren",
+    "count": 5,
+    "pitched": false
+   },
+   {
+    "name": "slapstick",
+    "count": 5,
+    "pitched": false
+   },
+   {
+    "name": "sleighbells",
+    "count": 6,
+    "pitched": false
+   },
+   {
+    "name": "slitdrum",
+    "count": 6,
+    "pitched": false
+   },
+   {
+    "name": "snare_hi",
+    "count": 8,
+    "pitched": false
+   },
+   {
+    "name": "snare_low",
+    "count": 20,
+    "pitched": false
+   },
+   {
+    "name": "snare_modern",
+    "count": 72,
+    "pitched": false
+   },
+   {
+    "name": "space",
+    "count": 18,
+    "pitched": false
+   },
+   {
+    "name": "steinway",
+    "count": 42,
+    "pitched": true
+   },
+   {
+    "name": "strumstick",
+    "count": 19,
+    "pitched": true
+   },
+   {
+    "name": "super64",
+    "count": 13,
+    "pitched": true
+   },
+   {
+    "name": "super64_acc",
+    "count": 13,
+    "pitched": true
+   },
+   {
+    "name": "super64_vib",
+    "count": 13,
+    "pitched": true
+   },
+   {
+    "name": "sus_cymbal",
+    "count": 25,
+    "pitched": false
+   },
+   {
+    "name": "sus_cymbal2",
+    "count": 23,
+    "pitched": false
+   },
+   {
+    "name": "ta",
+    "count": 9,
+    "pitched": false
+   },
+   {
+    "name": "tambourine",
+    "count": 7,
+    "pitched": false
+   },
+   {
+    "name": "tambourine2",
+    "count": 7,
+    "pitched": false
+   },
+   {
+    "name": "tb",
+    "count": 1,
+    "pitched": false
+   },
+   {
+    "name": "tha",
+    "count": 7,
+    "pitched": false
+   },
+   {
+    "name": "thom",
+    "count": 7,
+    "pitched": false
+   },
+   {
+    "name": "timpani",
+    "count": 30,
+    "pitched": false
+   },
+   {
+    "name": "timpani_roll",
+    "count": 10,
+    "pitched": false
+   },
+   {
+    "name": "timpani2",
+    "count": 204,
+    "pitched": false
+   },
+   {
+    "name": "tom_mallet",
+    "count": 8,
+    "pitched": false
+   },
+   {
+    "name": "tom_stick",
+    "count": 8,
+    "pitched": false
+   },
+   {
+    "name": "tom2_mallet",
+    "count": 8,
+    "pitched": false
+   },
+   {
+    "name": "tom2_stick",
+    "count": 8,
+    "pitched": false
+   },
+   {
+    "name": "trainwhistle",
+    "count": 6,
+    "pitched": false
+   },
+   {
+    "name": "triangles",
+    "count": 37,
+    "pitched": false
+   },
+   {
+    "name": "tubularbells",
+    "count": 9,
+    "pitched": true
+   },
+   {
+    "name": "tubularbells2",
+    "count": 11,
+    "pitched": true
+   },
+   {
+    "name": "vibraphone",
+    "count": 11,
+    "pitched": true
+   },
+   {
+    "name": "vibraphone_bowed",
+    "count": 6,
+    "pitched": true
+   },
+   {
+    "name": "vibraphone_soft",
+    "count": 11,
+    "pitched": true
+   },
+   {
+    "name": "vibraslap",
+    "count": 4,
+    "pitched": false
+   },
+   {
+    "name": "wind",
+    "count": 10,
+    "pitched": false
+   },
+   {
+    "name": "wineglass",
+    "count": 4,
+    "pitched": true
+   },
+   {
+    "name": "wineglass_slow",
+    "count": 4,
+    "pitched": true
+   },
+   {
+    "name": "woodblock",
+    "count": 10,
+    "pitched": false
+   },
+   {
+    "name": "xylophone_hard_ff",
+    "count": 8,
+    "pitched": true
+   },
+   {
+    "name": "xylophone_hard_pp",
+    "count": 8,
+    "pitched": true
+   },
+   {
+    "name": "xylophone_medium_ff",
+    "count": 8,
+    "pitched": true
+   },
+   {
+    "name": "xylophone_medium_pp",
+    "count": 8,
+    "pitched": true
+   },
+   {
+    "name": "xylophone_soft_ff",
+    "count": 8,
+    "pitched": true
+   },
+   {
+    "name": "xylophone_soft_pp",
+    "count": 8,
+    "pitched": true
+   }
+  ],
+  "drumMachines": {
+   "9000": [
+    "bd",
+    "cb",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "tb"
+   ],
+   "ace": [
+    "bd",
+    "hh",
+    "ht",
+    "lt",
+    "oh",
+    "perc",
+    "sd"
+   ],
+   "AJKPercusyn": [
+    "bd",
+    "cb",
+    "ht",
+    "sd"
+   ],
+   "AkaiLinn": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "rd",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "AkaiMPC60": [
+    "bd",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd"
+   ],
+   "AkaiXR10": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "AlesisHR16": [
+    "bd",
+    "cp",
+    "hh",
+    "ht",
+    "lt",
+    "oh",
+    "perc",
+    "rim",
+    "sd",
+    "sh"
+   ],
+   "AlesisSR16": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "misc",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "BossDR110": [
+    "bd",
+    "cp",
+    "cr",
+    "hh",
+    "oh",
+    "rd",
+    "sd"
+   ],
+   "BossDR220": [
+    "bd",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "sd"
+   ],
+   "BossDR55": [
+    "bd",
+    "hh",
+    "rim",
+    "sd"
+   ],
+   "BossDR550": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "CasioRZ1": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "rd",
+    "rim",
+    "sd"
+   ],
+   "CasioSK1": [
+    "bd",
+    "hh",
+    "ht",
+    "mt",
+    "oh",
+    "sd"
+   ],
+   "CasioVL1": [
+    "bd",
+    "hh",
+    "sd"
+   ],
+   "circuitsdrumtracks": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "oh",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "circuitstom": [
+    "bd",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "oh",
+    "sd"
+   ],
+   "compurhythm1000": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd"
+   ],
+   "compurhythm78": [
+    "bd",
+    "cb",
+    "hh",
+    "misc",
+    "oh",
+    "perc",
+    "sd",
+    "tb"
+   ],
+   "compurhythm8000": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rim",
+    "sd"
+   ],
+   "concertmatemg1": [
+    "bd",
+    "sd"
+   ],
+   "d110": [
+    "bd",
+    "cb",
+    "cr",
+    "hh",
+    "lt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "d70": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh"
+   ],
+   "ddm110": [
+    "bd",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "oh",
+    "rim",
+    "sd"
+   ],
+   "ddr30": [
+    "bd",
+    "ht",
+    "lt",
+    "sd"
+   ],
+   "dmx": [
+    "bd",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "DoepferMS404": [
+    "bd",
+    "hh",
+    "lt",
+    "oh",
+    "sd"
+   ],
+   "dpm48": [
+    "bd",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh"
+   ],
+   "dr110": [
+    "bd",
+    "cp",
+    "cr",
+    "hh",
+    "oh",
+    "rd",
+    "sd"
+   ],
+   "dr220": [
+    "bd",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "sd"
+   ],
+   "dr55": [
+    "bd",
+    "hh",
+    "rim",
+    "sd"
+   ],
+   "dr550": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "drumulator": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rim",
+    "sd"
+   ],
+   "EmuDrumulator": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rim",
+    "sd"
+   ],
+   "EmuModular": [
+    "bd",
+    "misc",
+    "perc"
+   ],
+   "EmuSP12": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd"
+   ],
+   "hr16": [
+    "bd",
+    "cp",
+    "hh",
+    "ht",
+    "lt",
+    "oh",
+    "perc",
+    "rim",
+    "sd",
+    "sh"
+   ],
+   "jd990": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "sd",
+    "tb"
+   ],
+   "KorgDDM110": [
+    "bd",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "oh",
+    "rim",
+    "sd"
+   ],
+   "KorgKPR77": [
+    "bd",
+    "cp",
+    "hh",
+    "oh",
+    "sd"
+   ],
+   "KorgKR55": [
+    "bd",
+    "cb",
+    "cr",
+    "hh",
+    "ht",
+    "oh",
+    "perc",
+    "rim",
+    "sd"
+   ],
+   "KorgKRZ": [
+    "bd",
+    "cr",
+    "fx",
+    "hh",
+    "ht",
+    "lt",
+    "misc",
+    "oh",
+    "rd",
+    "sd"
+   ],
+   "KorgM1": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "KorgMinipops": [
+    "bd",
+    "hh",
+    "misc",
+    "oh",
+    "sd"
+   ],
+   "KorgPoly800": [
+    "bd"
+   ],
+   "KorgT3": [
+    "bd",
+    "cp",
+    "hh",
+    "misc",
+    "oh",
+    "perc",
+    "rim",
+    "sd",
+    "sh"
+   ],
+   "kpr77": [
+    "bd",
+    "cp",
+    "hh",
+    "oh",
+    "sd"
+   ],
+   "kr55": [
+    "bd",
+    "cb",
+    "cr",
+    "hh",
+    "ht",
+    "oh",
+    "perc",
+    "rim",
+    "sd"
+   ],
+   "krz": [
+    "bd",
+    "cr",
+    "fx",
+    "hh",
+    "ht",
+    "lt",
+    "misc",
+    "oh",
+    "rd",
+    "sd"
+   ],
+   "linn": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "rd",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "Linn9000": [
+    "bd",
+    "cb",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "tb"
+   ],
+   "LinnDrum": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "LinnLM1": [
+    "bd",
+    "cb",
+    "cp",
+    "hh",
+    "ht",
+    "lt",
+    "oh",
+    "perc",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "LinnLM2": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "lm1": [
+    "bd",
+    "cb",
+    "cp",
+    "hh",
+    "ht",
+    "lt",
+    "oh",
+    "perc",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "lm2": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "lm8953": [
+    "bd",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "rd",
+    "rim",
+    "sd",
+    "tb"
+   ],
+   "m1": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "mc202": [
+    "bd",
+    "ht",
+    "perc"
+   ],
+   "mc303": [
+    "bd",
+    "cb",
+    "cp",
+    "fx",
+    "hh",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "MFB512": [
+    "bd",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "sd"
+   ],
+   "microrhythmer12": [
+    "bd",
+    "hh",
+    "oh",
+    "sd"
+   ],
+   "minipops": [
+    "bd",
+    "hh",
+    "misc",
+    "oh",
+    "sd"
+   ],
+   "MoogConcertMateMG1": [
+    "bd",
+    "sd"
+   ],
+   "MPC1000": [
+    "bd",
+    "cp",
+    "hh",
+    "oh",
+    "perc",
+    "sd",
+    "sh"
+   ],
+   "mpc60": [
+    "bd",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd"
+   ],
+   "ms404": [
+    "bd",
+    "hh",
+    "lt",
+    "oh",
+    "sd"
+   ],
+   "mt32": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "OberheimDMX": [
+    "bd",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "percysyn": [
+    "bd",
+    "cb",
+    "ht",
+    "sd"
+   ],
+   "polaris": [
+    "bd",
+    "misc",
+    "sd"
+   ],
+   "poly800": [
+    "bd"
+   ],
+   "r8": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "r88": [
+    "bd",
+    "cr",
+    "hh",
+    "oh",
+    "sd"
+   ],
+   "RhodesPolaris": [
+    "bd",
+    "misc",
+    "sd"
+   ],
+   "RhythmAce": [
+    "bd",
+    "hh",
+    "ht",
+    "lt",
+    "oh",
+    "perc",
+    "sd"
+   ],
+   "rm50": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "RolandCompurhythm1000": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd"
+   ],
+   "RolandCompurhythm78": [
+    "bd",
+    "cb",
+    "hh",
+    "misc",
+    "oh",
+    "perc",
+    "sd",
+    "tb"
+   ],
+   "RolandCompurhythm8000": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rim",
+    "sd"
+   ],
+   "RolandD110": [
+    "bd",
+    "cb",
+    "cr",
+    "hh",
+    "lt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "RolandD70": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh"
+   ],
+   "RolandDDR30": [
+    "bd",
+    "ht",
+    "lt",
+    "sd"
+   ],
+   "RolandJD990": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "sd",
+    "tb"
+   ],
+   "RolandMC202": [
+    "bd",
+    "ht",
+    "perc"
+   ],
+   "RolandMC303": [
+    "bd",
+    "cb",
+    "cp",
+    "fx",
+    "hh",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "RolandMT32": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "RolandR8": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "RolandS50": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "RolandSH09": [
+    "bd"
+   ],
+   "RolandSystem100": [
+    "bd",
+    "hh",
+    "misc",
+    "oh",
+    "perc",
+    "sd"
+   ],
+   "RolandTR505": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd"
+   ],
+   "RolandTR606": [
+    "bd",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "oh",
+    "sd"
+   ],
+   "RolandTR626": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "RolandTR707": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "rim",
+    "sd",
+    "tb"
+   ],
+   "RolandTR727": [
+    "perc",
+    "sh"
+   ],
+   "RolandTR808": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rim",
+    "sd",
+    "sh"
+   ],
+   "RolandTR909": [
+    "bd",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "rd",
+    "rim",
+    "sd"
+   ],
+   "rx21": [
+    "bd",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "sd"
+   ],
+   "rx5": [
+    "bd",
+    "cb",
+    "fx",
+    "hh",
+    "lt",
+    "oh",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "ry30": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "rz1": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "rd",
+    "rim",
+    "sd"
+   ],
+   "s50": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "SakataDPM48": [
+    "bd",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh"
+   ],
+   "sds400": [
+    "ht",
+    "lt",
+    "mt",
+    "sd"
+   ],
+   "sds5": [
+    "bd",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "rim",
+    "sd"
+   ],
+   "SequentialCircuitsDrumtracks": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "oh",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "SequentialCircuitsTom": [
+    "bd",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "oh",
+    "sd"
+   ],
+   "serge": [
+    "bd",
+    "misc",
+    "perc"
+   ],
+   "SergeModular": [
+    "bd",
+    "misc",
+    "perc"
+   ],
+   "sh09": [
+    "bd"
+   ],
+   "SimmonsSDS400": [
+    "ht",
+    "lt",
+    "mt",
+    "sd"
+   ],
+   "SimmonsSDS5": [
+    "bd",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "rim",
+    "sd"
+   ],
+   "sk1": [
+    "bd",
+    "hh",
+    "ht",
+    "mt",
+    "oh",
+    "sd"
+   ],
+   "snare": [
+    "rim"
+   ],
+   "SoundmastersR88": [
+    "bd",
+    "cr",
+    "hh",
+    "oh",
+    "sd"
+   ],
+   "sp12": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd"
+   ],
+   "spacedrum": [
+    "bd",
+    "cb",
+    "hh",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rim",
+    "sd"
+   ],
+   "sr16": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "misc",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "system100": [
+    "bd",
+    "hh",
+    "misc",
+    "oh",
+    "perc",
+    "sd"
+   ],
+   "t3": [
+    "bd",
+    "cp",
+    "hh",
+    "misc",
+    "oh",
+    "perc",
+    "rim",
+    "sd",
+    "sh"
+   ],
+   "tg33": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "fx",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "tom": [
+    "rim"
+   ],
+   "tom2": [
+    "rim"
+   ],
+   "tr505": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd"
+   ],
+   "tr606": [
+    "bd",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "oh",
+    "sd"
+   ],
+   "tr626": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "tr707": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "rim",
+    "sd",
+    "tb"
+   ],
+   "tr727": [
+    "perc",
+    "sh"
+   ],
+   "tr808": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "perc",
+    "rim",
+    "sd",
+    "sh"
+   ],
+   "tr909": [
+    "bd",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "rd",
+    "rim",
+    "sd"
+   ],
+   "UnivoxMicroRhythmer12": [
+    "bd",
+    "hh",
+    "oh",
+    "sd"
+   ],
+   "ViscoSpaceDrum": [
+    "bd",
+    "cb",
+    "hh",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rim",
+    "sd"
+   ],
+   "vl1": [
+    "bd",
+    "hh",
+    "sd"
+   ],
+   "XdrumLM8953": [
+    "bd",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "rd",
+    "rim",
+    "sd",
+    "tb"
+   ],
+   "xr10": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "YamahaRM50": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "YamahaRX21": [
+    "bd",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "mt",
+    "oh",
+    "sd"
+   ],
+   "YamahaRX5": [
+    "bd",
+    "cb",
+    "fx",
+    "hh",
+    "lt",
+    "oh",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "YamahaRY30": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "hh",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ],
+   "YamahaTG33": [
+    "bd",
+    "cb",
+    "cp",
+    "cr",
+    "fx",
+    "ht",
+    "lt",
+    "misc",
+    "mt",
+    "oh",
+    "perc",
+    "rd",
+    "rim",
+    "sd",
+    "sh",
+    "tb"
+   ]
+  }
+ },
+ "packs": [
+  {
+   "load": "samples('github:tidalcycles/dirt-samples')",
+   "repo": "tidalcycles/dirt-samples",
+   "note": "Full SuperDirt library (~200 banks) incl. breaks125/152/157/165 and amencutup.",
+   "banks": [
+    {
+     "name": "808",
+     "count": 6
+    },
+    {
+     "name": "909",
+     "count": 1
+    },
+    {
+     "name": "808bd",
+     "count": 25
+    },
+    {
+     "name": "808cy",
+     "count": 25
+    },
+    {
+     "name": "808hc",
+     "count": 5
+    },
+    {
+     "name": "808ht",
+     "count": 5
+    },
+    {
+     "name": "808lc",
+     "count": 5
+    },
+    {
+     "name": "808lt",
+     "count": 5
+    },
+    {
+     "name": "808mc",
+     "count": 5
+    },
+    {
+     "name": "808mt",
+     "count": 5
+    },
+    {
+     "name": "808oh",
+     "count": 5
+    },
+    {
+     "name": "808sd",
+     "count": 25
+    },
+    {
+     "name": "ab",
+     "count": 12
+    },
+    {
+     "name": "ade",
+     "count": 10
+    },
+    {
+     "name": "ades2",
+     "count": 9
+    },
+    {
+     "name": "ades3",
+     "count": 7
+    },
+    {
+     "name": "ades4",
+     "count": 6
+    },
+    {
+     "name": "alex",
+     "count": 2
+    },
+    {
+     "name": "alphabet",
+     "count": 26
+    },
+    {
+     "name": "amencutup",
+     "count": 32,
+     "loops": [
+      {
+       "index": 0,
+       "file": "000_AMENCUT_001.wav",
+       "seconds": 0.27,
+       "tempoIf": []
+      },
+      {
+       "index": 1,
+       "file": "001_AMENCUT_002.wav",
+       "seconds": 0.282,
+       "tempoIf": []
+      },
+      {
+       "index": 2,
+       "file": "002_AMENCUT_003.wav",
+       "seconds": 0.293,
+       "tempoIf": []
+      },
+      {
+       "index": 3,
+       "file": "003_AMENCUT_004.wav",
+       "seconds": 0.141,
+       "tempoIf": []
+      },
+      {
+       "index": 4,
+       "file": "004_AMENCUT_005.wav",
+       "seconds": 0.128,
+       "tempoIf": []
+      },
+      {
+       "index": 5,
+       "file": "005_AMENCUT_006.wav",
+       "seconds": 0.115,
+       "tempoIf": []
+      },
+      {
+       "index": 6,
+       "file": "006_AMENCUT_007.wav",
+       "seconds": 0.137,
+       "tempoIf": []
+      },
+      {
+       "index": 7,
+       "file": "007_AMENCUT_008.wav",
+       "seconds": 0.157,
+       "tempoIf": []
+      }
+     ]
+    },
+    {
+     "name": "armora",
+     "count": 7
+    },
+    {
+     "name": "arp",
+     "count": 2
+    },
+    {
+     "name": "arpy",
+     "count": 11
+    },
+    {
+     "name": "auto",
+     "count": 11
+    },
+    {
+     "name": "baa",
+     "count": 7
+    },
+    {
+     "name": "baa2",
+     "count": 7
+    },
+    {
+     "name": "bass",
+     "count": 4
+    },
+    {
+     "name": "bass0",
+     "count": 3
+    },
+    {
+     "name": "bass1",
+     "count": 30
+    },
+    {
+     "name": "bass2",
+     "count": 5
+    },
+    {
+     "name": "bass3",
+     "count": 11
+    },
+    {
+     "name": "bassdm",
+     "count": 24
+    },
+    {
+     "name": "bassfoo",
+     "count": 3
+    },
+    {
+     "name": "battles",
+     "count": 2
+    },
+    {
+     "name": "bd",
+     "count": 24
+    },
+    {
+     "name": "bend",
+     "count": 4
+    },
+    {
+     "name": "bev",
+     "count": 2
+    },
+    {
+     "name": "bin",
+     "count": 2
+    },
+    {
+     "name": "birds",
+     "count": 10
+    },
+    {
+     "name": "birds3",
+     "count": 19
+    },
+    {
+     "name": "bleep",
+     "count": 13
+    },
+    {
+     "name": "blip",
+     "count": 2
+    },
+    {
+     "name": "blue",
+     "count": 2
+    },
+    {
+     "name": "bottle",
+     "count": 13
+    },
+    {
+     "name": "breaks125",
+     "count": 2,
+     "loops": [
+      {
+       "index": 0,
+       "file": "015_sdstckbr.wav",
+       "seconds": 1.871,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 128.3
+        }
+       ]
+      },
+      {
+       "index": 1,
+       "file": "016_bllstmp.wav",
+       "seconds": 1.939,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 123.8
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "breaks152",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "000_AMEN.WAV",
+       "seconds": 4.7,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 102.1
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "breaks157",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "000_PLEAD.WAV",
+       "seconds": 1.816,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 132.2
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "breaks165",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "000_RAWCLN.WAV",
+       "seconds": 1.423,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 168.7
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "breath",
+     "count": 1
+    },
+    {
+     "name": "bubble",
+     "count": 8
+    },
+    {
+     "name": "can",
+     "count": 14
+    },
+    {
+     "name": "casio",
+     "count": 3
+    },
+    {
+     "name": "cb",
+     "count": 1
+    },
+    {
+     "name": "cc",
+     "count": 6
+    },
+    {
+     "name": "chin",
+     "count": 4
+    },
+    {
+     "name": "circus",
+     "count": 3
+    },
+    {
+     "name": "clak",
+     "count": 2
+    },
+    {
+     "name": "click",
+     "count": 4
+    },
+    {
+     "name": "clubkick",
+     "count": 5
+    },
+    {
+     "name": "co",
+     "count": 4
+    },
+    {
+     "name": "coins",
+     "count": 1
+    },
+    {
+     "name": "control",
+     "count": 2
+    },
+    {
+     "name": "cosmicg",
+     "count": 15
+    },
+    {
+     "name": "cp",
+     "count": 2
+    },
+    {
+     "name": "cr",
+     "count": 6
+    },
+    {
+     "name": "crow",
+     "count": 4
+    },
+    {
+     "name": "d",
+     "count": 4
+    },
+    {
+     "name": "db",
+     "count": 13
+    },
+    {
+     "name": "diphone",
+     "count": 38
+    },
+    {
+     "name": "diphone2",
+     "count": 12
+    },
+    {
+     "name": "dist",
+     "count": 16
+    },
+    {
+     "name": "dork2",
+     "count": 4
+    },
+    {
+     "name": "dorkbot",
+     "count": 2
+    },
+    {
+     "name": "dr",
+     "count": 42
+    },
+    {
+     "name": "dr2",
+     "count": 6
+    },
+    {
+     "name": "dr55",
+     "count": 4
+    },
+    {
+     "name": "dr_few",
+     "count": 8
+    },
+    {
+     "name": "drum",
+     "count": 6
+    },
+    {
+     "name": "drumtraks",
+     "count": 13
+    },
+    {
+     "name": "e",
+     "count": 8
+    },
+    {
+     "name": "east",
+     "count": 9
+    },
+    {
+     "name": "electro1",
+     "count": 13
+    },
+    {
+     "name": "em2",
+     "count": 6
+    },
+    {
+     "name": "erk",
+     "count": 1
+    },
+    {
+     "name": "f",
+     "count": 1
+    },
+    {
+     "name": "feel",
+     "count": 7
+    },
+    {
+     "name": "feelfx",
+     "count": 8
+    },
+    {
+     "name": "fest",
+     "count": 1
+    },
+    {
+     "name": "fire",
+     "count": 1
+    },
+    {
+     "name": "flick",
+     "count": 17
+    },
+    {
+     "name": "fm",
+     "count": 17
+    },
+    {
+     "name": "foo",
+     "count": 27
+    },
+    {
+     "name": "future",
+     "count": 17
+    },
+    {
+     "name": "gab",
+     "count": 10
+    },
+    {
+     "name": "gabba",
+     "count": 4
+    },
+    {
+     "name": "gabbaloud",
+     "count": 4
+    },
+    {
+     "name": "gabbalouder",
+     "count": 4
+    },
+    {
+     "name": "glasstap",
+     "count": 3
+    },
+    {
+     "name": "glitch",
+     "count": 8
+    },
+    {
+     "name": "glitch2",
+     "count": 8
+    },
+    {
+     "name": "gretsch",
+     "count": 24
+    },
+    {
+     "name": "gtr",
+     "count": 3
+    },
+    {
+     "name": "h",
+     "count": 7
+    },
+    {
+     "name": "hand",
+     "count": 17
+    },
+    {
+     "name": "hardcore",
+     "count": 12
+    },
+    {
+     "name": "hardkick",
+     "count": 6
+    },
+    {
+     "name": "haw",
+     "count": 6
+    },
+    {
+     "name": "hc",
+     "count": 6
+    },
+    {
+     "name": "hh",
+     "count": 13
+    },
+    {
+     "name": "hh27",
+     "count": 13
+    },
+    {
+     "name": "hit",
+     "count": 6
+    },
+    {
+     "name": "hmm",
+     "count": 1
+    },
+    {
+     "name": "ho",
+     "count": 6
+    },
+    {
+     "name": "hoover",
+     "count": 6
+    },
+    {
+     "name": "house",
+     "count": 8
+    },
+    {
+     "name": "ht",
+     "count": 16
+    },
+    {
+     "name": "if",
+     "count": 5
+    },
+    {
+     "name": "ifdrums",
+     "count": 3
+    },
+    {
+     "name": "incoming",
+     "count": 8
+    },
+    {
+     "name": "industrial",
+     "count": 32
+    },
+    {
+     "name": "insect",
+     "count": 3
+    },
+    {
+     "name": "invaders",
+     "count": 18
+    },
+    {
+     "name": "jazz",
+     "count": 8
+    },
+    {
+     "name": "jungbass",
+     "count": 20
+    },
+    {
+     "name": "jungle",
+     "count": 13
+    },
+    {
+     "name": "juno",
+     "count": 12
+    },
+    {
+     "name": "jvbass",
+     "count": 13
+    },
+    {
+     "name": "kicklinn",
+     "count": 1
+    },
+    {
+     "name": "koy",
+     "count": 2
+    },
+    {
+     "name": "kurt",
+     "count": 7
+    },
+    {
+     "name": "latibro",
+     "count": 8
+    },
+    {
+     "name": "led",
+     "count": 1
+    },
+    {
+     "name": "less",
+     "count": 4
+    },
+    {
+     "name": "lighter",
+     "count": 33
+    },
+    {
+     "name": "linnhats",
+     "count": 6
+    },
+    {
+     "name": "lt",
+     "count": 16
+    },
+    {
+     "name": "made",
+     "count": 7
+    },
+    {
+     "name": "made2",
+     "count": 1
+    },
+    {
+     "name": "mash",
+     "count": 2
+    },
+    {
+     "name": "mash2",
+     "count": 4
+    },
+    {
+     "name": "metal",
+     "count": 10
+    },
+    {
+     "name": "miniyeah",
+     "count": 4
+    },
+    {
+     "name": "monsterb",
+     "count": 6
+    },
+    {
+     "name": "moog",
+     "count": 7
+    },
+    {
+     "name": "mouth",
+     "count": 15
+    },
+    {
+     "name": "mp3",
+     "count": 4
+    },
+    {
+     "name": "msg",
+     "count": 9
+    },
+    {
+     "name": "mt",
+     "count": 16
+    },
+    {
+     "name": "mute",
+     "count": 28
+    },
+    {
+     "name": "newnotes",
+     "count": 15
+    },
+    {
+     "name": "noise",
+     "count": 1
+    },
+    {
+     "name": "noise2",
+     "count": 8
+    },
+    {
+     "name": "notes",
+     "count": 15
+    },
+    {
+     "name": "numbers",
+     "count": 9
+    },
+    {
+     "name": "num",
+     "count": 21
+    },
+    {
+     "name": "oc",
+     "count": 4
+    },
+    {
+     "name": "odx",
+     "count": 15
+    },
+    {
+     "name": "off",
+     "count": 1
+    },
+    {
+     "name": "outdoor",
+     "count": 6
+    },
+    {
+     "name": "pad",
+     "count": 3
+    },
+    {
+     "name": "padlong",
+     "count": 1
+    },
+    {
+     "name": "pebbles",
+     "count": 1
+    },
+    {
+     "name": "perc",
+     "count": 6
+    },
+    {
+     "name": "peri",
+     "count": 15
+    },
+    {
+     "name": "pluck",
+     "count": 17
+    },
+    {
+     "name": "popkick",
+     "count": 10
+    },
+    {
+     "name": "print",
+     "count": 11
+    },
+    {
+     "name": "proc",
+     "count": 2
+    },
+    {
+     "name": "procshort",
+     "count": 8
+    },
+    {
+     "name": "psr",
+     "count": 30
+    },
+    {
+     "name": "rave",
+     "count": 8
+    },
+    {
+     "name": "rave2",
+     "count": 4
+    },
+    {
+     "name": "ravemono",
+     "count": 2
+    },
+    {
+     "name": "realclaps",
+     "count": 4
+    },
+    {
+     "name": "reverbkick",
+     "count": 1
+    },
+    {
+     "name": "rm",
+     "count": 2
+    },
+    {
+     "name": "rs",
+     "count": 1
+    },
+    {
+     "name": "sax",
+     "count": 22
+    },
+    {
+     "name": "sd",
+     "count": 2
+    },
+    {
+     "name": "seawolf",
+     "count": 3
+    },
+    {
+     "name": "sequential",
+     "count": 8
+    },
+    {
+     "name": "sf",
+     "count": 18
+    },
+    {
+     "name": "sheffield",
+     "count": 1
+    },
+    {
+     "name": "short",
+     "count": 5
+    },
+    {
+     "name": "sid",
+     "count": 12
+    },
+    {
+     "name": "simplesine",
+     "count": 6
+    },
+    {
+     "name": "sitar",
+     "count": 8
+    },
+    {
+     "name": "sn",
+     "count": 52
+    },
+    {
+     "name": "space",
+     "count": 18
+    },
+    {
+     "name": "speakspell",
+     "count": 12
+    },
+    {
+     "name": "speech",
+     "count": 7
+    },
+    {
+     "name": "speechless",
+     "count": 10
+    },
+    {
+     "name": "speedupdown",
+     "count": 9
+    },
+    {
+     "name": "stab",
+     "count": 23
+    },
+    {
+     "name": "stomp",
+     "count": 10
+    },
+    {
+     "name": "subroc3d",
+     "count": 11
+    },
+    {
+     "name": "sugar",
+     "count": 2
+    },
+    {
+     "name": "sundance",
+     "count": 6
+    },
+    {
+     "name": "tabla",
+     "count": 26
+    },
+    {
+     "name": "tabla2",
+     "count": 46
+    },
+    {
+     "name": "tablex",
+     "count": 3
+    },
+    {
+     "name": "tacscan",
+     "count": 22
+    },
+    {
+     "name": "tech",
+     "count": 13
+    },
+    {
+     "name": "techno",
+     "count": 7
+    },
+    {
+     "name": "tink",
+     "count": 5
+    },
+    {
+     "name": "tok",
+     "count": 4
+    },
+    {
+     "name": "toys",
+     "count": 13
+    },
+    {
+     "name": "trump",
+     "count": 11
+    },
+    {
+     "name": "ul",
+     "count": 10
+    },
+    {
+     "name": "ulgab",
+     "count": 5
+    },
+    {
+     "name": "uxay",
+     "count": 3
+    },
+    {
+     "name": "v",
+     "count": 6
+    },
+    {
+     "name": "voodoo",
+     "count": 5
+    },
+    {
+     "name": "wind",
+     "count": 10
+    },
+    {
+     "name": "wobble",
+     "count": 1
+    },
+    {
+     "name": "world",
+     "count": 3
+    },
+    {
+     "name": "xmas",
+     "count": 1
+    },
+    {
+     "name": "yeah",
+     "count": 31
+    }
+   ]
+  },
+  {
+   "load": "samples('github:yaxu/clean-breaks')",
+   "repo": "yaxu/clean-breaks",
+   "note": "Classic drum breaks, cleaned up. One break per bank; use .fit() or .loopAt().",
+   "banks": [
+    {
+     "name": "useme",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Bill_Withers_-_Use_Me_(101_LoopFix) [2019-03-04 124553].wav",
+       "seconds": 6.23,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 77
+        },
+        {
+         "bars": 4,
+         "bpm": 154.1
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "sesame",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Blowfly_-_Sesame_Street_(2) [2019-03-04 124553].wav",
+       "seconds": 2.014,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 119.2
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "do",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Bobby_Byrd_Feat._The_J.B's_-_Doin'_The_Do [2019-03-04 124553].wav",
+       "seconds": 3.932,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 61
+        },
+        {
+         "bars": 2,
+         "bpm": 122.1
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "funkydrummer",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "James_Brown_-_Funky_Drummer_(2) [2019-03-04 124553].wav",
+       "seconds": 4.657,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 103.1
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "mechanicalman",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Jerry_Butler_-_I'm_Your_Mechanical_Man_(101_Edit) [2019-03-04 124554].wav",
+       "seconds": 2.217,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 108.3
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "kool",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Kool_&_The_Gang_-_Chocolate_Buttermilk [2019-03-04 124554].wav",
+       "seconds": 4.184,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 114.7
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "sport",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Lightnin'_Rod_-_Sport [2019-03-04 124552].wav",
+       "seconds": 1.995,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 120.3
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "rill",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Little_Richard_-_The_Rill_Thing [2019-03-04 124550].wav",
+       "seconds": 6.1,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 78.7
+        },
+        {
+         "bars": 4,
+         "bpm": 157.4
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "think",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Lyn_Collins_-_Think_(4) [2019-03-04 124551].wav",
+       "seconds": 2.098,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 114.4
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "king",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Mantronix_-_King_Of_The_Beats [2019-03-04 124552].wav",
+       "seconds": 4.603,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 104.3
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "around",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Mark_Putney_-_Don't_Come_Around_Here_Anymore [2019-03-04 124552].wav",
+       "seconds": 1.834,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 130.9
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "riffin",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "M.c_Duke_-_I'm_Riffin_(Smokin'_Beats_Small_Edit) [2019-03-04 124552].wav",
+       "seconds": 4.282,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 112.1
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "apache",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Michael_Viner's_Incredible_Bongo_Band_-_Apache_(1)(Fixed-End) [2019-03-04 124550].wav",
+       "seconds": 4.155,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 115.5
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "neworleans",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Nat_Adderley_-_New_Orleans [2019-03-04 124550].wav",
+       "seconds": 4.124,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 116.4
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "hitormiss",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Odetta_-_Hit_Or_Miss [2019-03-04 124550].wav",
+       "seconds": 5.333,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 90
+        },
+        {
+         "bars": 4,
+         "bpm": 180
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "action",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Orange_Krush_-_Action [2019-03-04 124551].wav",
+       "seconds": 2.378,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 100.9
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "hotline",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Rance_Allen_Group_-_Hot_Line_To_Jesus [2019-03-04 124551].wav",
+       "seconds": 5.116,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 93.8
+        },
+        {
+         "bars": 4,
+         "bpm": 187.6
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "swat",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Rhythm_Heritage_-_Theme_From_S.W.A.T_(Hats) [2019-03-04 124551].wav",
+       "seconds": 2.241,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 107.1
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "ripple",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Ripple_-_A_Funky_Song [2019-03-04 124551].wav",
+       "seconds": 4.857,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 98.8
+        },
+        {
+         "bars": 4,
+         "bpm": 197.7
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "fireeater",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Rusty_Bryant_-_Fire_Eater_(2) [2019-03-04 124551].wav",
+       "seconds": 9.721,
+       "tempoIf": [
+        {
+         "bars": 4,
+         "bpm": 98.8
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "hungup",
+     "count": 2,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Salt_-_Hung_Up_(1) [2019-03-04 124551].wav",
+       "seconds": 5.592,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 85.8
+        },
+        {
+         "bars": 4,
+         "bpm": 171.7
+        }
+       ]
+      },
+      {
+       "index": 1,
+       "file": "Salt_-_Hung_Up_(1) [2019-03-04 124553].wav",
+       "seconds": 5.592,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 85.8
+        },
+        {
+         "bars": 4,
+         "bpm": 171.7
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "newday",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Skull_Snaps_-_Its_A_New_Day [2019-03-04 124549].wav",
+       "seconds": 5.018,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 95.7
+        },
+        {
+         "bars": 4,
+         "bpm": 191.3
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "movement",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "SL_Troopers_-_Movement_(2) [2019-03-04 124549].wav",
+       "seconds": 3.9,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 61.5
+        },
+        {
+         "bars": 2,
+         "bpm": 123.1
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "boogiewoogie",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Sound_Experience_-_Boogie_Woogie [2019-03-04 124549].wav",
+       "seconds": 4.567,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 105.1
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "delight",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Sugarhill_Gang_-_Rapper's_Delight [2019-03-04 124549].wav",
+       "seconds": 4.413,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 108.8
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "eeloil",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "The_Bamboos_-_Eel_Oil [2019-03-04 124549].wav",
+       "seconds": 4.11,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 116.8
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "impeach",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "The_Honeydrippers_-_Impeach_The_President [2019-03-04 124550].wav",
+       "seconds": 2.506,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 95.8
+        },
+        {
+         "bars": 2,
+         "bpm": 191.5
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "marymary",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "The_Monkeys_-_Mary_Mary [2019-03-04 124550].wav",
+       "seconds": 3.785,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 63.4
+        },
+        {
+         "bars": 2,
+         "bpm": 126.8
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "amen",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "The_Winstons_-_Amen_Brother [2019-03-04 124550].wav",
+       "seconds": 6.962,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 68.9
+        },
+        {
+         "bars": 4,
+         "bpm": 137.9
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "sneakin",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Tom_Scott_And_The_L.A._Express_-_Sneakin'_In_The_Back [2019-03-04 124552].wav",
+       "seconds": 5.027,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 95.5
+        },
+        {
+         "bars": 4,
+         "bpm": 191
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "squib",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Tower_Of_Power_-_Squib_Cakes [2019-03-04 124552].wav",
+       "seconds": 4.304,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 111.5
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "groove",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Wilbur_Bascomb_&_The_Zodiac_-_Just_A_Groove_In_'G' [2019-03-04 124553].wav",
+       "seconds": 4.416,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 108.7
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "load": "samples('github:switchangel/breaks')",
+   "repo": "switchangel/breaks",
+   "note": "Breakbeat loops (bank \"breaks\").",
+   "banks": [
+    {
+     "name": "breaks",
+     "count": 5,
+     "loops": [
+      {
+       "index": 0,
+       "file": "10_break.wav",
+       "seconds": 2.909,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 82.5
+        },
+        {
+         "bars": 2,
+         "bpm": 165
+        }
+       ]
+      },
+      {
+       "index": 1,
+       "file": "11_break.wav",
+       "seconds": 2.909,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 82.5
+        },
+        {
+         "bars": 2,
+         "bpm": 165
+        }
+       ]
+      },
+      {
+       "index": 2,
+       "file": "12_break.wav",
+       "seconds": 2.909,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 82.5
+        },
+        {
+         "bars": 2,
+         "bpm": 165
+        }
+       ]
+      },
+      {
+       "index": 3,
+       "file": "13_break.wav",
+       "seconds": 2.909,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 82.5
+        },
+        {
+         "bars": 2,
+         "bpm": 165
+        }
+       ]
+      },
+      {
+       "index": 4,
+       "file": "14_break.wav",
+       "seconds": 2.909,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 82.5
+        },
+        {
+         "bars": 2,
+         "bpm": 165
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "load": "samples('github:Bubobubobubobubo/Dough-Amen')",
+   "repo": "Bubobubobubobubo/Dough-Amen",
+   "note": "Amen break variations.",
+   "banks": [
+    {
+     "name": "amen1",
+     "count": 20,
+     "loops": [
+      {
+       "index": 0,
+       "file": "cw_amen08_165.wav",
+       "seconds": 2.909,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 82.5
+        },
+        {
+         "bars": 2,
+         "bpm": 165
+        }
+       ]
+      },
+      {
+       "index": 1,
+       "file": "cw_amen09_175.wav",
+       "seconds": 2.743,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 87.5
+        },
+        {
+         "bars": 2,
+         "bpm": 175
+        }
+       ]
+      },
+      {
+       "index": 2,
+       "file": "cw_amen19_172.wav",
+       "seconds": 5.581,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 86
+        },
+        {
+         "bars": 4,
+         "bpm": 172
+        }
+       ]
+      },
+      {
+       "index": 3,
+       "file": "cw_amen01_175.wav",
+       "seconds": 2.743,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 87.5
+        },
+        {
+         "bars": 2,
+         "bpm": 175
+        }
+       ]
+      },
+      {
+       "index": 4,
+       "file": "cw_amen02_165.wav",
+       "seconds": 2.909,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 82.5
+        },
+        {
+         "bars": 2,
+         "bpm": 165
+        }
+       ]
+      },
+      {
+       "index": 5,
+       "file": "cw_amen13_173.wav",
+       "seconds": 5.549,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 86.5
+        },
+        {
+         "bars": 4,
+         "bpm": 173
+        }
+       ]
+      },
+      {
+       "index": 6,
+       "file": "cw_amen03_167.wav",
+       "seconds": 2.874,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 83.5
+        },
+        {
+         "bars": 2,
+         "bpm": 167
+        }
+       ]
+      },
+      {
+       "index": 7,
+       "file": "cw_amen06_169.wav",
+       "seconds": 2.84,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 84.5
+        },
+        {
+         "bars": 2,
+         "bpm": 169
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "amen3",
+     "count": 20,
+     "loops": [
+      {
+       "index": 0,
+       "file": "Creek Break 160.wav",
+       "seconds": 3,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 80
+        },
+        {
+         "bars": 2,
+         "bpm": 160
+        }
+       ]
+      },
+      {
+       "index": 1,
+       "file": "Hype Break 170.wav",
+       "seconds": 2.824,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 85
+        },
+        {
+         "bars": 2,
+         "bpm": 170
+        }
+       ]
+      },
+      {
+       "index": 2,
+       "file": "Crot Break 165.wav",
+       "seconds": 2.909,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 82.5
+        },
+        {
+         "bars": 2,
+         "bpm": 165
+        }
+       ]
+      },
+      {
+       "index": 3,
+       "file": "Bibop Break 160.wav",
+       "seconds": 3,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 80
+        },
+        {
+         "bars": 2,
+         "bpm": 160
+        }
+       ]
+      },
+      {
+       "index": 4,
+       "file": "Assasin Break 168.wav",
+       "seconds": 2.857,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 84
+        },
+        {
+         "bars": 2,
+         "bpm": 168
+        }
+       ]
+      },
+      {
+       "index": 5,
+       "file": "Hydro Break 170.wav",
+       "seconds": 2.824,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 85
+        },
+        {
+         "bars": 2,
+         "bpm": 170
+        }
+       ]
+      },
+      {
+       "index": 6,
+       "file": "Snap Break 165.wav",
+       "seconds": 2.909,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 82.5
+        },
+        {
+         "bars": 2,
+         "bpm": 165
+        }
+       ]
+      },
+      {
+       "index": 7,
+       "file": "Rust Break 170.wav",
+       "seconds": 2.824,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 85
+        },
+        {
+         "bars": 2,
+         "bpm": 170
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "amen2",
+     "count": 40,
+     "loops": [
+      {
+       "index": 0,
+       "file": "cw_amen_drumroll.wav",
+       "seconds": 2.647,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 90.7
+        },
+        {
+         "bars": 2,
+         "bpm": 181.3
+        }
+       ]
+      },
+      {
+       "index": 1,
+       "file": "cw_amen_finger.wav",
+       "seconds": 2.823,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 85
+        },
+        {
+         "bars": 2,
+         "bpm": 170
+        }
+       ]
+      },
+      {
+       "index": 2,
+       "file": "cw_amen_onbreak.wav",
+       "seconds": 1.395,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 172
+        }
+       ]
+      },
+      {
+       "index": 3,
+       "file": "cw_amen_oldskool.wav",
+       "seconds": 3.008,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 79.8
+        },
+        {
+         "bars": 2,
+         "bpm": 159.6
+        }
+       ]
+      },
+      {
+       "index": 4,
+       "file": "cw_amen_downstratch.wav",
+       "seconds": 4.017,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 119.5
+        }
+       ]
+      },
+      {
+       "index": 5,
+       "file": "cw_amen_deeptouch.wav",
+       "seconds": 8.731,
+       "tempoIf": [
+        {
+         "bars": 4,
+         "bpm": 110
+        }
+       ]
+      },
+      {
+       "index": 6,
+       "file": "cw_amen_stretch.wav",
+       "seconds": 2.759,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 87
+        },
+        {
+         "bars": 2,
+         "bpm": 174
+        }
+       ]
+      },
+      {
+       "index": 7,
+       "file": "cw_amen_negative.wav",
+       "seconds": 6.857,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 70
+        },
+        {
+         "bars": 4,
+         "bpm": 140
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "load": "samples('github:eddyflux/wax')",
+   "repo": "eddyflux/wax",
+   "note": "Vinyl-style loops and textures.",
+   "banks": [
+    {
+     "name": "atmosphere",
+     "count": 2,
+     "loops": [
+      {
+       "index": 0,
+       "file": "epiano_atmosphere.wav",
+       "seconds": 7.224,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 66.4
+        },
+        {
+         "bars": 4,
+         "bpm": 132.9
+        }
+       ]
+      },
+      {
+       "index": 1,
+       "file": "epiano_atmosphere2.wav",
+       "seconds": 7.224,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 66.4
+        },
+        {
+         "bars": 4,
+         "bpm": 132.9
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "teentonic",
+     "count": 4,
+     "loops": [
+      {
+       "index": 0,
+       "file": "pierre-henry-teen-tonic.wav",
+       "seconds": 2.334,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 102.8
+        }
+       ]
+      },
+      {
+       "index": 1,
+       "file": "pierre-henry-teen-tonic4.wav",
+       "seconds": 2.772,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 86.6
+        },
+        {
+         "bars": 2,
+         "bpm": 173.2
+        }
+       ]
+      },
+      {
+       "index": 2,
+       "file": "pierre-henry-teen-tonic2.wav",
+       "seconds": 1.874,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 128.1
+        }
+       ]
+      },
+      {
+       "index": 3,
+       "file": "pierre-henry-teen-tonic3.wav",
+       "seconds": 2.825,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 85
+        },
+        {
+         "bars": 2,
+         "bpm": 169.9
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "perrey",
+     "count": 2,
+     "loops": [
+      {
+       "index": 0,
+       "file": "4-jean-jacques-perrey-e-v-a-10-2023-07-06-115029.wav",
+       "seconds": 0.838,
+       "tempoIf": []
+      },
+      {
+       "index": 1,
+       "file": "4-jean-jacques-perrey-e-v-a.wav",
+       "seconds": 0.635,
+       "tempoIf": []
+      }
+     ]
+    },
+    {
+     "name": "longvocal",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "jackson5-can-you-feel-it.wav",
+       "seconds": 27.156,
+       "tempoIf": []
+      }
+     ]
+    },
+    {
+     "name": "loop4",
+     "count": 3,
+     "loops": [
+      {
+       "index": 0,
+       "file": "brian-bennett-ladybird.wav",
+       "seconds": 11.486,
+       "tempoIf": [
+        {
+         "bars": 4,
+         "bpm": 83.6
+        }
+       ]
+      },
+      {
+       "index": 1,
+       "file": "onehundredways.wav",
+       "seconds": 10.673,
+       "tempoIf": [
+        {
+         "bars": 4,
+         "bpm": 89.9
+        }
+       ]
+      },
+      {
+       "index": 2,
+       "file": "quincyloop.wav",
+       "seconds": 9.193,
+       "tempoIf": [
+        {
+         "bars": 4,
+         "bpm": 104.4
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "loop2",
+     "count": 5,
+     "loops": [
+      {
+       "index": 0,
+       "file": "jean-jacques-perrey-e-v-a.wav",
+       "seconds": 4.866,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 98.6
+        },
+        {
+         "bars": 4,
+         "bpm": 197.3
+        }
+       ]
+      },
+      {
+       "index": 1,
+       "file": "quincyflute.wav",
+       "seconds": 6.007,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 79.9
+        },
+        {
+         "bars": 4,
+         "bpm": 159.8
+        }
+       ]
+      },
+      {
+       "index": 2,
+       "file": "secretgarden.wav",
+       "seconds": 7.567,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 63.4
+        },
+        {
+         "bars": 4,
+         "bpm": 126.9
+        }
+       ]
+      },
+      {
+       "index": 3,
+       "file": "whatwouldido.wav",
+       "seconds": 5.012,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 95.8
+        },
+        {
+         "bars": 4,
+         "bpm": 191.5
+        }
+       ]
+      },
+      {
+       "index": 4,
+       "file": "z_bodyheat.wav",
+       "seconds": 5.871,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 81.8
+        },
+        {
+         "bars": 4,
+         "bpm": 163.5
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "midnight",
+     "count": 2,
+     "loops": [
+      {
+       "index": 0,
+       "file": "dizzy-gillespie-the-last-stroke-of-midnight2.wav",
+       "seconds": 0.558,
+       "tempoIf": []
+      },
+      {
+       "index": 1,
+       "file": "dizzy-gillespie-the-last-stroke-of-midnight.wav",
+       "seconds": 0.613,
+       "tempoIf": []
+      }
+     ]
+    },
+    {
+     "name": "quincy_danger",
+     "count": 5,
+     "loops": [
+      {
+       "index": 0,
+       "file": "quincy-jones-kitty-with-the-bent-frame.wav",
+       "seconds": 6.75,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 71.1
+        },
+        {
+         "bars": 4,
+         "bpm": 142.2
+        }
+       ]
+      },
+      {
+       "index": 1,
+       "file": "quincy-jones-kitty-with-the-bent-frame2.wav",
+       "seconds": 6.743,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 71.2
+        },
+        {
+         "bars": 4,
+         "bpm": 142.4
+        }
+       ]
+      },
+      {
+       "index": 2,
+       "file": "quincy-jones-up-against-the-wall.wav"
+      },
+      {
+       "index": 3,
+       "file": "z_danger_ironside.wav",
+       "seconds": 0.921,
+       "tempoIf": []
+      },
+      {
+       "index": 4,
+       "file": "z_quincy_danger2.wav",
+       "seconds": 4.068,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 118
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "oneshots",
+     "count": 7,
+     "loops": [
+      {
+       "index": 0,
+       "file": "quincy-jones-kitty-with-the-bent-frame.wav",
+       "seconds": 6.75,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 71.1
+        },
+        {
+         "bars": 4,
+         "bpm": 142.2
+        }
+       ]
+      },
+      {
+       "index": 1,
+       "file": "quincy-jones-kitty-with-the-bent-frame2.wav",
+       "seconds": 6.743,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 71.2
+        },
+        {
+         "bars": 4,
+         "bpm": 142.4
+        }
+       ]
+      },
+      {
+       "index": 2,
+       "file": "jean-jacques-perrey-gossipo-perpetuo2.wav",
+       "seconds": 0.671,
+       "tempoIf": []
+      },
+      {
+       "index": 3,
+       "file": "jean-jacques-perrey-gossipo-perpetuo1.wav",
+       "seconds": 0.625,
+       "tempoIf": []
+      },
+      {
+       "index": 4,
+       "file": "bobbi-humphrey-baby-s-gone.wav",
+       "seconds": 1.125,
+       "tempoIf": []
+      },
+      {
+       "index": 5,
+       "file": "quincy-jones-up-against-the-wall.wav",
+       "seconds": 6.355,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 75.5
+        },
+        {
+         "bars": 4,
+         "bpm": 151.1
+        }
+       ]
+      },
+      {
+       "index": 6,
+       "file": "z_quincy_bassclarinet.wav",
+       "seconds": 0.695,
+       "tempoIf": []
+      }
+     ]
+    },
+    {
+     "name": "cartoon",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "krtekfrogs.wav",
+       "seconds": 4.5,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 106.7
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "hehe",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "hehe-mikey-dread-operator-s-choice.wav",
+       "seconds": 1.278,
+       "tempoIf": [
+        {
+         "bars": 1,
+         "bpm": 187.8
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "timeslie",
+     "count": 2,
+     "loops": [
+      {
+       "index": 0,
+       "file": "joe-farrell-times-lie.wav",
+       "seconds": 0.522,
+       "tempoIf": []
+      },
+      {
+       "index": 1,
+       "file": "joe-farrell-times-lie2.wav",
+       "seconds": 1.097,
+       "tempoIf": []
+      }
+     ]
+    },
+    {
+     "name": "hornhit",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "hit1-james-brown-stone-to-the-bone.wav",
+       "seconds": 0.608,
+       "tempoIf": []
+      }
+     ]
+    },
+    {
+     "name": "queens",
+     "count": 2,
+     "loops": [
+      {
+       "index": 0,
+       "file": "soft-machine-kings-and-queens.wav",
+       "seconds": 1,
+       "tempoIf": []
+      },
+      {
+       "index": 1,
+       "file": "soft-machine-kings-and-queens2.wav",
+       "seconds": 0.375,
+       "tempoIf": []
+      }
+     ]
+    },
+    {
+     "name": "ooh",
+     "count": 2,
+     "loops": [
+      {
+       "index": 0,
+       "file": "ooh1-james-brown-stone-to-the-bone.wav",
+       "seconds": 0.5,
+       "tempoIf": []
+      },
+      {
+       "index": 1,
+       "file": "ooh2-james-brown-stone-to-the-bone.wav",
+       "seconds": 0.608,
+       "tempoIf": []
+      }
+     ]
+    },
+    {
+     "name": "bassloop2",
+     "count": 7,
+     "loops": [
+      {
+       "index": 0,
+       "file": "quincy-jones-kitty-with-the-bent-frame3.wav",
+       "seconds": 5.966,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 80.5
+        },
+        {
+         "bars": 4,
+         "bpm": 160.9
+        }
+       ]
+      },
+      {
+       "index": 1,
+       "file": "jane-birkin-serge-gainsbourg-69-anne-e-e-rotique.wav",
+       "seconds": 4.108,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 116.8
+        }
+       ]
+      },
+      {
+       "index": 2,
+       "file": "bass_James Brown - Stone To The Bone.wav",
+       "seconds": 5.455,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 88
+        },
+        {
+         "bars": 4,
+         "bpm": 176
+        }
+       ]
+      },
+      {
+       "index": 3,
+       "file": "bass2_120_joe farrell - bass folk song.wav",
+       "seconds": 4.005,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 119.9
+        }
+       ]
+      },
+      {
+       "index": 4,
+       "file": "bass2_88_miles-davis-bitches-brew.wav",
+       "seconds": 5.439,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 88.3
+        },
+        {
+         "bars": 4,
+         "bpm": 176.5
+        }
+       ]
+      },
+      {
+       "index": 5,
+       "file": "z_alongwaytogo.wav",
+       "seconds": 5.914,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 81.2
+        },
+        {
+         "bars": 4,
+         "bpm": 162.3
+        }
+       ]
+      },
+      {
+       "index": 6,
+       "file": "z_gutamatari.wav",
+       "seconds": 5.803,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 82.7
+        },
+        {
+         "bars": 4,
+         "bpm": 165.4
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "bassloop4",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "alongcamebetty.wav",
+       "seconds": 10.016,
+       "tempoIf": [
+        {
+         "bars": 4,
+         "bpm": 95.8
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "didnti",
+     "count": 3,
+     "loops": [
+      {
+       "index": 0,
+       "file": "git_didnti.wav",
+       "seconds": 6.741,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 71.2
+        },
+        {
+         "bars": 4,
+         "bpm": 142.4
+        }
+       ]
+      },
+      {
+       "index": 1,
+       "file": "git_didnti2.wav",
+       "seconds": 6.509,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 73.7
+        },
+        {
+         "bars": 4,
+         "bpm": 147.5
+        }
+       ]
+      },
+      {
+       "index": 2,
+       "file": "git_didnti3.wav",
+       "seconds": 6.452,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 74.4
+        },
+        {
+         "bars": 4,
+         "bpm": 148.8
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "disco",
+     "count": 2,
+     "loops": [
+      {
+       "index": 0,
+       "file": "givemethenight.wav",
+       "seconds": 4.336,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 110.7
+        }
+       ]
+      },
+      {
+       "index": 1,
+       "file": "streetwave.wav",
+       "seconds": 4.205,
+       "tempoIf": [
+        {
+         "bars": 2,
+         "bpm": 114.1
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "wax_sd",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "sd_bodyheat.wav",
+       "seconds": 0.572,
+       "tempoIf": []
+      }
+     ]
+    },
+    {
+     "name": "golosa",
+     "count": 1,
+     "loops": [
+      {
+       "index": 0,
+       "file": "golosa.mp3"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "load": "samples('github:eddyflux/crate')",
+   "repo": "eddyflux/crate",
+   "note": "Dusty lo-fi drum kit, use .bank(\"crate\").",
+   "banks": [
+    {
+     "name": "crate_sd",
+     "count": 54
+    },
+    {
+     "name": "crate_block",
+     "count": 7
+    },
+    {
+     "name": "crate_bd",
+     "count": 53
+    },
+    {
+     "name": "crate_bell",
+     "count": 2
+    },
+    {
+     "name": "crate_djembe",
+     "count": 4
+    },
+    {
+     "name": "crate_cr",
+     "count": 16
+    },
+    {
+     "name": "crate_clave",
+     "count": 4
+    },
+    {
+     "name": "crate_tb",
+     "count": 8
+    },
+    {
+     "name": "crate_sh",
+     "count": 15
+    },
+    {
+     "name": "crate_stick",
+     "count": 6
+    },
+    {
+     "name": "crate_hh",
+     "count": 49
+    },
+    {
+     "name": "crate_rim",
+     "count": 3
+    },
+    {
+     "name": "crate_conga",
+     "count": 11
+    },
+    {
+     "name": "crate_bongo",
+     "count": 4
+    },
+    {
+     "name": "crate_cp",
+     "count": 37
+    },
+    {
+     "name": "crate_perc",
+     "count": 40
+    },
+    {
+     "name": "crate_oh",
+     "count": 34
+    },
+    {
+     "name": "crate_rd",
+     "count": 20
+    }
+   ]
+  },
+  {
+   "load": "samples('github:mot4i/garden')",
+   "repo": "mot4i/garden",
+   "note": "Drum kit, use .bank(\"garden\").",
+   "banks": [
+    {
+     "name": "garden_cp",
+     "count": 5
+    },
+    {
+     "name": "garden_bd",
+     "count": 10
+    },
+    {
+     "name": "garden_oh",
+     "count": 2
+    },
+    {
+     "name": "garden_cr",
+     "count": 4
+    },
+    {
+     "name": "garden_sn",
+     "count": 2
+    },
+    {
+     "name": "garden_hh",
+     "count": 4
+    },
+    {
+     "name": "garden_rim",
+     "count": 5
+    },
+    {
+     "name": "garden_sd",
+     "count": 4
+    },
+    {
+     "name": "garden_lt",
+     "count": 7
+    },
+    {
+     "name": "fx",
+     "count": 5
+    },
+    {
+     "name": "strings",
+     "count": 6
+    },
+    {
+     "name": "loop",
+     "count": 4
+    },
+    {
+     "name": "metal",
+     "count": 2
+    }
+   ]
+  },
+  {
+   "load": "samples('github:switchangel/pad')",
+   "repo": "switchangel/pad",
+   "note": "Pad samples (bank \"swpad\").",
+   "banks": [
+    {
+     "name": "swpad",
+     "count": 5
+    }
+   ]
+  },
+  {
+   "load": "samples('github:yaxu/spicule')",
+   "repo": "yaxu/spicule",
+   "note": "Assorted one-shots and stabs.",
+   "banks": [
+    {
+     "name": "acid",
+     "count": 3
+    },
+    {
+     "name": "airhorn",
+     "count": 1
+    },
+    {
+     "name": "arc",
+     "count": 1
+    },
+    {
+     "name": "atlast",
+     "count": 3
+    },
+    {
+     "name": "bd9",
+     "count": 10
+    },
+    {
+     "name": "bees",
+     "count": 6
+    },
+    {
+     "name": "big",
+     "count": 6
+    },
+    {
+     "name": "bk",
+     "count": 96
+    },
+    {
+     "name": "bks",
+     "count": 8
+    },
+    {
+     "name": "blk",
+     "count": 20
+    },
+    {
+     "name": "bls",
+     "count": 13
+    },
+    {
+     "name": "bsbass",
+     "count": 9
+    },
+    {
+     "name": "bsguitar",
+     "count": 19
+    },
+    {
+     "name": "bshihat",
+     "count": 3
+    },
+    {
+     "name": "bskick",
+     "count": 9
+    },
+    {
+     "name": "bsperc",
+     "count": 8
+    },
+    {
+     "name": "bssnare",
+     "count": 8
+    },
+    {
+     "name": "bsvocals",
+     "count": 13
+    },
+    {
+     "name": "clap",
+     "count": 8
+    },
+    {
+     "name": "claus",
+     "count": 16
+    },
+    {
+     "name": "clean",
+     "count": 8
+    },
+    {
+     "name": "cp9",
+     "count": 4
+    },
+    {
+     "name": "cr9",
+     "count": 4
+    },
+    {
+     "name": "crofton",
+     "count": 3
+    },
+    {
+     "name": "dhm",
+     "count": 1
+    },
+    {
+     "name": "dirty",
+     "count": 89
+    },
+    {
+     "name": "donk",
+     "count": 1
+    },
+    {
+     "name": "foley",
+     "count": 287
+    },
+    {
+     "name": "funky",
+     "count": 8
+    },
+    {
+     "name": "gab",
+     "count": 10
+    },
+    {
+     "name": "hh9",
+     "count": 4
+    },
+    {
+     "name": "hits",
+     "count": 16
+    },
+    {
+     "name": "ht9",
+     "count": 8
+    },
+    {
+     "name": "jp",
+     "count": 8
+    },
+    {
+     "name": "jungbleep",
+     "count": 1
+    },
+    {
+     "name": "jv",
+     "count": 13
+    },
+    {
+     "name": "jvgabba",
+     "count": 46
+    },
+    {
+     "name": "jvr",
+     "count": 25
+    },
+    {
+     "name": "jvrave",
+     "count": 66
+    },
+    {
+     "name": "jx",
+     "count": 73
+    },
+    {
+     "name": "kick",
+     "count": 21
+    },
+    {
+     "name": "liq",
+     "count": 1
+    },
+    {
+     "name": "lt9",
+     "count": 8
+    },
+    {
+     "name": "micron",
+     "count": 17
+    },
+    {
+     "name": "mt9",
+     "count": 8
+    },
+    {
+     "name": "narc",
+     "count": 2
+    },
+    {
+     "name": "oh9",
+     "count": 4
+    },
+    {
+     "name": "onoff",
+     "count": 5
+    },
+    {
+     "name": "os",
+     "count": 3
+    },
+    {
+     "name": "pirate",
+     "count": 1
+    },
+    {
+     "name": "pulse",
+     "count": 61
+    },
+    {
+     "name": "rash",
+     "count": 73
+    },
+    {
+     "name": "ravebass",
+     "count": 13
+    },
+    {
+     "name": "rd9",
+     "count": 4
+    },
+    {
+     "name": "redflag",
+     "count": 1
+    },
+    {
+     "name": "repeticion",
+     "count": 2
+    },
+    {
+     "name": "repetition",
+     "count": 7
+    },
+    {
+     "name": "rim",
+     "count": 9
+    },
+    {
+     "name": "rs9",
+     "count": 2
+    },
+    {
+     "name": "sb",
+     "count": 3
+    },
+    {
+     "name": "sclap",
+     "count": 25
+    },
+    {
+     "name": "scream",
+     "count": 1
+    },
+    {
+     "name": "sd9",
+     "count": 15
+    },
+    {
+     "name": "shackup",
+     "count": 1
+    },
+    {
+     "name": "shakedown",
+     "count": 1
+    },
+    {
+     "name": "skip",
+     "count": 4
+    },
+    {
+     "name": "sl",
+     "count": 4
+    },
+    {
+     "name": "snare",
+     "count": 90
+    },
+    {
+     "name": "sometimes",
+     "count": 1
+    },
+    {
+     "name": "sqrpad",
+     "count": 3
+    },
+    {
+     "name": "sr",
+     "count": 64
+    },
+    {
+     "name": "stabs",
+     "count": 19
+    },
+    {
+     "name": "tam",
+     "count": 17
+    },
+    {
+     "name": "vocobass",
+     "count": 13
+    },
+    {
+     "name": "xx",
+     "count": 89
+    }
+   ]
+  },
+  {
+   "load": "samples('github:Bubobubobubobubo/Dough-Fox')",
+   "repo": "Bubobubobubobubo/Dough-Fox",
+   "note": "Electronic one-shots (kicks, snaps, blips).",
+   "banks": [
+    {
+     "name": "fclap",
+     "count": 6
+    },
+    {
+     "name": "fdarkkick",
+     "count": 5
+    },
+    {
+     "name": "fbeep",
+     "count": 5
+    },
+    {
+     "name": "ftriangle",
+     "count": 3
+    },
+    {
+     "name": "fthree",
+     "count": 2
+    },
+    {
+     "name": "fyeah",
+     "count": 6
+    },
+    {
+     "name": "fsnap",
+     "count": 6
+    },
+    {
+     "name": "fnoisekick",
+     "count": 3
+    },
+    {
+     "name": "fcow",
+     "count": 3
+    },
+    {
+     "name": "fdistkick",
+     "count": 3
+    },
+    {
+     "name": "fscrap",
+     "count": 7
+    },
+    {
+     "name": "ftoms",
+     "count": 5
+    },
+    {
+     "name": "fclaps",
+     "count": 5
+    },
+    {
+     "name": "fnoise",
+     "count": 6
+    },
+    {
+     "name": "fhang",
+     "count": 6
+    },
+    {
+     "name": "fhardhit",
+     "count": 7
+    },
+    {
+     "name": "fqlower",
+     "count": 2
+    },
+    {
+     "name": "fone",
+     "count": 2
+    },
+    {
+     "name": "flazer",
+     "count": 3
+    },
+    {
+     "name": "fohh",
+     "count": 4
+    },
+    {
+     "name": "ffour",
+     "count": 2
+    },
+    {
+     "name": "fplus",
+     "count": 3
+    },
+    {
+     "name": "fsub",
+     "count": 2
+    },
+    {
+     "name": "frevnoise",
+     "count": 3
+    },
+    {
+     "name": "fjungle",
+     "count": 6
+    },
+    {
+     "name": "ftwo",
+     "count": 2
+    },
+    {
+     "name": "fsoftsnare",
+     "count": 5
+    },
+    {
+     "name": "fssnare",
+     "count": 5
+    },
+    {
+     "name": "frocksnare",
+     "count": 5
+    },
+    {
+     "name": "fhits",
+     "count": 5
+    },
+    {
+     "name": "ftabla",
+     "count": 8
+    },
+    {
+     "name": "fslower",
+     "count": 4
+    },
+    {
+     "name": "fscratch",
+     "count": 4
+    },
+    {
+     "name": "fwood",
+     "count": 4
+    },
+    {
+     "name": "ftablas",
+     "count": 6
+    },
+    {
+     "name": "foh",
+     "count": 6
+    },
+    {
+     "name": "fsnare",
+     "count": 4
+    },
+    {
+     "name": "fmisc",
+     "count": 2
+    },
+    {
+     "name": "fdub",
+     "count": 4
+    },
+    {
+     "name": "fcowbell",
+     "count": 3
+    },
+    {
+     "name": "fxupper",
+     "count": 4
+    },
+    {
+     "name": "fkit",
+     "count": 8
+    },
+    {
+     "name": "fconga",
+     "count": 0
+    },
+    {
+     "name": "fglitch",
+     "count": 6
+    },
+    {
+     "name": "fstab",
+     "count": 9
+    },
+    {
+     "name": "ftamborine",
+     "count": 3
+    },
+    {
+     "name": "fwoosh",
+     "count": 5
+    },
+    {
+     "name": "frim",
+     "count": 6
+    },
+    {
+     "name": "fcan",
+     "count": 4
+    },
+    {
+     "name": "ftom",
+     "count": 4
+    },
+    {
+     "name": "fhh",
+     "count": 22
+    },
+    {
+     "name": "fnoises",
+     "count": 5
+    },
+    {
+     "name": "froomy",
+     "count": 4
+    },
+    {
+     "name": "fcrash",
+     "count": 4
+    },
+    {
+     "name": "fpercus",
+     "count": 9
+    },
+    {
+     "name": "fhardkick",
+     "count": 5
+    },
+    {
+     "name": "fikea",
+     "count": 18
+    },
+    {
+     "name": "fperc",
+     "count": 5
+    },
+    {
+     "name": "fbins",
+     "count": 4
+    },
+    {
+     "name": "fbleep",
+     "count": 5
+    },
+    {
+     "name": "fride",
+     "count": 4
+    },
+    {
+     "name": "fhit",
+     "count": 4
+    },
+    {
+     "name": "fdot",
+     "count": 4
+    }
+   ]
+  },
+  {
+   "load": "samples('github:Bubobubobubobubo/Dough-Samples')",
+   "repo": "Bubobubobubobubo/Dough-Samples",
+   "note": "General purpose kit: kick, snare, stab, shaker, perc, fx.",
+   "banks": [
+    {
+     "name": "kick",
+     "count": 32
+    },
+    {
+     "name": "tom",
+     "count": 8
+    },
+    {
+     "name": "stab",
+     "count": 3
+    },
+    {
+     "name": "shaker",
+     "count": 1
+    },
+    {
+     "name": "snare",
+     "count": 27
+    },
+    {
+     "name": "perc",
+     "count": 27
+    },
+    {
+     "name": "fx",
+     "count": 17
+    },
+    {
+     "name": "snare2",
+     "count": 17
+    },
+    {
+     "name": "zap",
+     "count": 5
+    },
+    {
+     "name": "crash",
+     "count": 6
+    },
+    {
+     "name": "bass",
+     "count": 51
+    },
+    {
+     "name": "drone",
+     "count": 2
+    },
+    {
+     "name": "vocal",
+     "count": 14
+    },
+    {
+     "name": "pad",
+     "count": 16
+    },
+    {
+     "name": "synth",
+     "count": 42
+    },
+    {
+     "name": "perc2",
+     "count": 39
+    },
+    {
+     "name": "voc",
+     "count": 20
+    },
+    {
+     "name": "clap",
+     "count": 1
+    },
+    {
+     "name": "bass2",
+     "count": 29
+    },
+    {
+     "name": "bell",
+     "count": 1
+    },
+    {
+     "name": "cowbell",
+     "count": 7
+    },
+    {
+     "name": "bass3",
+     "count": 30
+    },
+    {
+     "name": "hat",
+     "count": 36
+    },
+    {
+     "name": "synth2",
+     "count": 39
+    },
+    {
+     "name": "ambiance",
+     "count": 1
+    },
+    {
+     "name": "impact",
+     "count": 1
+    },
+    {
+     "name": "loop",
+     "count": 9
+    }
+   ]
+  }
+ ]
+}

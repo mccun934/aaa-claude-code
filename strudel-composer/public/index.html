@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Strudel Composer</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Strudel Composer</h1>
+    <span id="status" class="muted"></span>
+  </header>
+  <main>
+    <section id="chat-panel" aria-label="Chat">
+      <div id="messages">
+        <div class="msg assistant intro">
+          <p>Tell me what you'd like to hear: a genre, a mood, a tempo, instruments, a reference. I'll write it in Strudel, render and score it, iterate until it's musical, then load it into the editor.</p>
+          <div class="suggestions">
+            <button>Deep house at 122 bpm with a warm Rhodes and a rolling bassline</button>
+            <button>Lo-fi hip hop beat with swung drums and jazzy chords</button>
+            <button>Ambient drone that slowly evolves, like a foggy morning</button>
+            <button>Jungle / drum &amp; bass using a chopped amen break</button>
+          </div>
+        </div>
+      </div>
+      <form id="composer">
+        <textarea id="input" rows="3" placeholder="Describe the music, or ask for changes…" required></textarea>
+        <button id="send" type="submit">Send</button>
+      </form>
+    </section>
+    <section id="editor-panel" aria-label="Strudel editor">
+      <div class="toolbar">
+        <button id="play" title="Evaluate and play (ctrl+enter in the editor)">▶ Play</button>
+        <button id="stop" title="Stop (ctrl+.)">■ Stop</button>
+        <button id="score" title="Render and score the code in the editor">Score my edits</button>
+        <select id="versions" title="Versions"><option value="">Versions</option></select>
+        <span id="badge" class="badge" hidden></span>
+      </div>
+      <div id="editor-wrap">
+        <strudel-editor id="editor"><!--
+// Your song will appear here.
+// Meanwhile, press Play to hear a tiny loop:
+setcps(0.5)
+stack(
+  s("bd*4, [~ cp]*2, hh*8").bank("RolandTR909").gain(.8),
+  n("<0 2 4 3>*4").scale("C2:minor").s("sawtooth").lpf(500)
+)
+--></strudel-editor>
+      </div>
+      <details id="analysis" hidden>
+        <summary>Analysis</summary>
+        <div id="analysis-body"></div>
+      </details>
+    </section>
+  </main>
+  <script type="module" src="/vendor/strudel-repl/index.js"></script>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
