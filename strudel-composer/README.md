@@ -42,6 +42,15 @@ same session, and **Restart** starts a fresh one. If Claude exits, you're
 left in a normal shell; `claude -c` resumes the conversation. Linux and macOS
 are supported (on Windows, use WSL).
 
+### Troubleshooting
+
+- **`Error: posix_spawnp failed` (macOS):** node-pty 1.1.0 installs its
+  `spawn-helper` without execute permission. A `postinstall` step and the
+  server both fix this automatically. On an older checkout, run
+  `chmod +x node_modules/node-pty/prebuilds/darwin-*/spawn-helper`.
+- **The terminal shows "Could not start the terminal":** the server log has
+  the details. Fix the cause, then press **Restart**.
+
 ### How Claude Code is set up
 
 - `CLAUDE.md` gives Claude its role and workflow: research → draft

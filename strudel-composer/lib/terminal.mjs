@@ -3,6 +3,7 @@
 // the same session instead of starting over.
 import pty from 'node-pty';
 import { ROOT } from './paths.mjs';
+import { fixSpawnHelper } from '../scripts/fix-node-pty.mjs';
 
 const SCROLLBACK_BYTES = 256 * 1024;
 
@@ -29,9 +30,10 @@ function defaultCommand() {
 }
 
 export class ClaudeTerminal {
-  constructor({ serverUrl, command = defaultCommand() } = {}) {
+  constructor({ serverUrl, command = defaultCommand(), spawn = pty.spawn } = {}) {
     this.serverUrl = serverUrl;
     this.command = command;
+    this.spawnPty = spawn;
     this.clients = new Set();
     this.buffer = '';
     this.cols = 100;
@@ -42,7 +44,22 @@ export class ClaudeTerminal {
   start() {
     if (this.proc) return;
     this.buffer = '';
-    this.proc = pty.spawn(this.command.file, this.command.args, {
+    fixSpawnHelper(); // in case node-pty was installed before the postinstall fix existed
+    try {
+      this.proc = this.#spawn();
+    } catch (err) {
+      // Keep the server up and show the problem in the browser terminal.
+      const msg = `\r\n\x1b[31mCould not start the terminal: ${err.message}\x1b[0m\r\n(command: ${this.command.file} ${this.command.args[0] ?? ''}) Check the server log, then press Restart.\r\n`;
+      console.error('[terminal] spawn failed:', err);
+      this.buffer = msg;
+      this.#broadcast({ type: 'output', data: msg });
+      return;
+    }
+    this.#attachHandlers(this.proc);
+  }
+
+  #spawn() {
+    return this.spawnPty(this.command.file, this.command.args, {
       name: 'xterm-256color',
       cols: this.cols,
       rows: this.rows,
@@ -55,7 +72,9 @@ export class ClaudeTerminal {
         STRUDEL_WELCOME: WELCOME_PROMPT,
       },
     });
-    const proc = this.proc;
+  }
+
+  #attachHandlers(proc) {
     proc.onData((data) => {
       this.buffer += data;
       if (this.buffer.length > SCROLLBACK_BYTES) this.buffer = this.buffer.slice(-SCROLLBACK_BYTES);
@@ -88,8 +107,8 @@ export class ClaudeTerminal {
 
   /** Attach a WebSocket: replay scrollback, then stream live I/O. */
   attach(ws) {
+    this.start(); // before adding ws, so a spawn error isn't sent to it twice
     this.clients.add(ws);
-    this.start();
     ws.send(JSON.stringify({ type: 'output', data: this.buffer }));
     ws.on('message', (raw) => {
       let msg;

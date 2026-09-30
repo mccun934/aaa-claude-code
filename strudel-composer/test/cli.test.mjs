@@ -41,3 +41,27 @@ test('terminal streams output, takes input and replays scrollback to new clients
   assert.match(b.sent[0].data, /http:\/\/x-ok/, 'late client gets scrollback');
   t.stop();
 });
+
+test('spawn-helper execute bits are restored (macOS posix_spawnp fix)', async () => {
+  const fs = await import('node:fs');
+  const { fixSpawnHelper } = await import('../scripts/fix-node-pty.mjs');
+  const helper = new URL('../node_modules/node-pty/prebuilds/darwin-arm64/spawn-helper', import.meta.url);
+  if (!fs.existsSync(helper)) return;
+  fs.chmodSync(helper, 0o644);
+  fixSpawnHelper();
+  assert.equal(fs.statSync(helper).mode & 0o111, 0o111);
+});
+
+test('a failing spawn is reported once in the terminal instead of crashing', () => {
+  const spawn = () => {
+    throw new Error('posix_spawnp failed.');
+  };
+  const t = new ClaudeTerminal({ serverUrl: 'http://x', spawn });
+  const a = new FakeSocket();
+  assert.doesNotThrow(() => t.attach(a));
+  const text = a.sent.map((m) => m.data ?? '').join('');
+  assert.equal(text.split('Could not start the terminal: posix_spawnp failed.').length, 2);
+  const b = new FakeSocket();
+  t.attach(b); // a reconnecting tab sees the error too
+  assert.match(b.sent.map((m) => m.data ?? '').join(''), /posix_spawnp failed/);
+});
