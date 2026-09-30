@@ -1,74 +1,72 @@
 const $ = (sel) => document.querySelector(sel);
-const messagesEl = $('#messages');
-const input = $('#input');
-const sendBtn = $('#send');
 const editorEl = $('#editor');
 const badge = $('#badge');
 const versionsEl = $('#versions');
 const analysis = $('#analysis');
 const analysisBody = $('#analysis-body');
 
-let sessionId = null;
-let busy = false;
 const versions = [];
+let lastReported = null; // editor code last sent to the server
 
 const editor = async () => {
   while (!editorEl.editor) await new Promise((r) => setTimeout(r, 50));
   return editorEl.editor;
 };
 
-// ------------------------------------------------------------ helpers
-
 function escapeHtml(s) {
-  return s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+  return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 }
 
-// Minimal markdown: fenced code, inline code, bold, paragraphs, bullet lists.
-function renderMarkdown(text) {
-  const parts = text.split(/```(?:\w+)?\n?([\s\S]*?)(?:```|$)/g);
-  return parts
-    .map((part, i) => {
-      if (i % 2) return `<pre><code>${escapeHtml(part.trimEnd())}</code></pre>`;
-      return part
-        .trim()
-        .split(/\n{2,}/)
-        .filter(Boolean)
-        .map((block) => {
-          const html = escapeHtml(block)
-            .replace(/`([^`]+)`/g, '<code>$1</code>')
-            .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-          if (/^\s*[-*] /m.test(block) && block.split('\n').every((l) => /^\s*[-*] /.test(l))) {
-            return `<ul>${html.split('\n').map((l) => `<li>${l.replace(/^\s*[-*] /, '')}</li>`).join('')}</ul>`;
-          }
-          return `<p>${html.replace(/\n/g, '<br>')}</p>`;
-        })
-        .join('');
-    })
-    .join('');
-}
+// ------------------------------------------------------------ terminal
 
-function scrollDown() {
-  messagesEl.scrollTop = messagesEl.scrollHeight;
-}
+const term = new window.Terminal({
+  cursorBlink: true,
+  fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Consolas, monospace',
+  fontSize: 13,
+  scrollback: 5000,
+  theme: { background: '#0f1115', foreground: '#e6e8ec', cursor: '#7ee0b5', selectionBackground: '#2a3a4f' },
+});
+const fit = new window.FitAddon.FitAddon();
+term.loadAddon(fit);
+term.open($('#terminal'));
+fit.fit();
 
-function addMessage(role, html) {
-  const el = document.createElement('div');
-  el.className = `msg ${role}`;
-  if (html !== undefined) el.innerHTML = html;
-  messagesEl.append(el);
-  scrollDown();
-  return el;
-}
+let ws = null;
+let retry = 0;
+const connDot = $('#conn');
+const send = (msg) => ws?.readyState === WebSocket.OPEN && ws.send(JSON.stringify(msg));
 
-const TOOL_LABELS = {
-  search_docs: (i) => `searched docs: “${i.query}”`,
-  lookup_function: (i) => `looked up ${i.name}()`,
-  search_examples: (i) => `searched examples: “${i.query}”`,
-  find_sounds: (i) => `browsed sounds: “${i.query}”`,
-  test_pattern: () => 'rendering & scoring a draft…',
-  listen: () => 'listening to the render…',
-  publish_song: (i) => `publishing “${i.title}”…`,
+async function connect() {
+  const { token } = await fetch('/api/terminal-token').then((r) => r.json());
+  const proto = location.protocol === 'https:' ? 'wss' : 'ws';
+  ws = new WebSocket(`${proto}://${location.host}/api/terminal?token=${token}`);
+  ws.onopen = () => {
+    retry = 0;
+    connDot.className = 'dot on';
+    term.reset(); // the server replays scrollback on attach
+    send({ type: 'resize', cols: term.cols, rows: term.rows });
+    term.focus();
+  };
+  ws.onmessage = (e) => {
+    const msg = JSON.parse(e.data);
+    if (msg.type === 'output') term.write(msg.data);
+    else if (msg.type === 'reset') term.reset();
+    else if (msg.type === 'exit') term.write(`\r\n\x1b[2m[process exited with code ${msg.exitCode}; press Restart]\x1b[0m\r\n`);
+  };
+  ws.onclose = () => {
+    connDot.className = 'dot off';
+    setTimeout(() => connect().catch(() => {}), Math.min(10_000, 500 * 2 ** retry++));
+  };
+}
+term.onData((data) => send({ type: 'input', data }));
+term.onResize(({ cols, rows }) => send({ type: 'resize', cols, rows }));
+new ResizeObserver(() => fit.fit()).observe($('#terminal'));
+$('#restart').onclick = () => {
+  if (confirm('Restart the terminal? This ends the current Claude Code session.')) send({ type: 'restart' });
 };
+connect().catch((err) => term.write(`Could not connect to the terminal: ${err.message}\r\n`));
+
+// ------------------------------------------------------------ songs
 
 function setBadge(score, pass) {
   badge.hidden = false;
@@ -81,28 +79,38 @@ function showAnalysis(ev) {
   const bars = Object.entries(ev.subscores ?? {})
     .map(([k, v]) => `<span>${k}</span><div class="bar"><span class="${v < 0.6 ? 'low' : ''}" style="width:${Math.round(v * 100)}%"></span></div><span>${Math.round(v * 100)}</span>`)
     .join('');
-  const verdict = ev.verdict && !ev.verdict.error
-    ? `<div class="verdict"><strong>Critic ${ev.verdict.overall}/10</strong>: ${escapeHtml(ev.verdict.summary)}<ul>${ev.verdict.fixes.map((f) => `<li>${escapeHtml(f)}</li>`).join('')}</ul></div>`
-    : '';
   const imgs = Object.entries(ev.images ?? {})
     .map(([name, src]) => `<div class="muted">${name === 'pianoRoll' ? 'Piano roll' : 'Spectrogram'}</div><img alt="${name}" src="${src}">`)
     .join('');
   analysisBody.innerHTML = `
-    <div><strong>Score ${ev.score}</strong> ${ev.pass ? '(pass)' : '(below pass mark)'}</div>
+    <div><strong>${ev.title ? `${escapeHtml(ev.title)}: ` : ''}score ${ev.score}</strong> ${ev.pass ? '(pass)' : '(below pass mark)'}</div>
     <div class="bars">${bars}</div>
     ${ev.issues?.length ? `<ul>${ev.issues.map((i) => `<li>${escapeHtml(i)}</li>`).join('')}</ul>` : ''}
-    ${verdict}${imgs}`;
+    ${imgs}`;
 }
+
+// Browsers only allow audio after a user gesture on the page.
+let audioUnlocked = false;
+const unlock = () => {
+  audioUnlocked = true;
+  $('#audio-hint').hidden = true;
+};
+window.addEventListener('pointerdown', unlock, { once: true, capture: true });
+window.addEventListener('keydown', unlock, { once: true, capture: true });
 
 async function loadSong(song, { play = true } = {}) {
   const ed = await editor();
   ed.setCode(song.code);
-  if (play) {
-    try {
-      await ed.evaluate();
-    } catch (err) {
-      console.error(err);
-    }
+  lastReported = null; // make sure the server learns about the new code
+  if (!play) return;
+  if (!audioUnlocked) {
+    $('#audio-hint').hidden = false;
+    return;
+  }
+  try {
+    await ed.evaluate();
+  } catch (err) {
+    console.error(err);
   }
 }
 
@@ -115,142 +123,34 @@ function addVersion(song) {
   versionsEl.value = opt.value;
 }
 
-// ------------------------------------------------------------ chat
-
-async function send(text) {
-  if (busy || !text.trim()) return;
-  busy = true;
-  sendBtn.disabled = true;
-  addMessage('user', escapeHtml(text));
-  const bubble = addMessage('assistant');
-  const activity = document.createElement('div');
-  activity.className = 'activity';
-  let textEl = null;
-  let textBuf = '';
-  let thinkingEl = null;
-  const step = (label) => {
-    const el = document.createElement('div');
-    el.className = 'step';
-    el.textContent = `· ${label}`;
-    activity.append(el);
-    if (!activity.isConnected) bubble.append(activity);
-    scrollDown();
-    return el;
-  };
-  let lastStep = null;
-
-  const ed = await editor();
-  let res;
-  try {
-    res = await fetch('/api/chat', {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ sessionId, message: text, editorCode: ed.code }),
-    });
-  } catch (err) {
-    bubble.innerHTML = `<p class="error">Network error: ${escapeHtml(err.message)}</p>`;
-    busy = false;
-    sendBtn.disabled = false;
-    return;
-  }
-  if (!res.ok) {
-    const err = await res.json().catch(() => ({}));
-    bubble.innerHTML = `<p class="error">${escapeHtml(err.error || res.statusText)}</p>`;
-    busy = false;
-    sendBtn.disabled = false;
-    return;
-  }
-
-  const handle = async (ev) => {
-    switch (ev.type) {
-      case 'session':
-        sessionId = ev.sessionId;
-        break;
-      case 'thinking':
-        if (!thinkingEl) {
-          thinkingEl = document.createElement('details');
-          thinkingEl.className = 'thinking';
-          thinkingEl.innerHTML = '<summary>thinking…</summary><div></div>';
-          bubble.append(thinkingEl);
-        }
-        thinkingEl.querySelector('div').textContent += ev.delta;
-        break;
-      case 'text':
-        if (!textEl) {
-          textEl = document.createElement('div');
-          bubble.append(textEl);
-          textBuf = '';
-        }
-        textBuf += ev.delta;
-        textEl.innerHTML = renderMarkdown(textBuf);
-        scrollDown();
-        break;
-      case 'tool':
-        textEl = null; // text after a tool call starts a new block
-        thinkingEl = null;
-        lastStep = step(TOOL_LABELS[ev.name]?.(ev.input) ?? ev.name);
-        break;
-      case 'status':
-        step(ev.text);
-        break;
-      case 'evaluation': {
-        const target = lastStep ?? step(ev.tool);
-        target.innerHTML += ` → <span class="score" style="color:${ev.pass ? 'var(--accent)' : 'var(--warn)'}">${ev.score}</span>${ev.verdict?.overall !== undefined ? ` · critic ${ev.verdict.overall}/10` : ''}`;
-        showAnalysis(ev);
-        break;
-      }
-      case 'song': {
-        setBadge(ev.score, !ev.warning);
-        addVersion(ev);
-        const card = document.createElement('div');
-        card.className = 'song-card';
-        card.innerHTML = `<span>🎵 <strong>${escapeHtml(ev.title)}</strong> · musicality ${ev.score}${ev.warning ? ` · <span class="error">${escapeHtml(ev.warning)}</span>` : ''}</span>`;
-        const btn = document.createElement('button');
-        btn.textContent = 'Load & play';
-        btn.onclick = () => loadSong(ev);
-        card.append(btn);
-        bubble.append(card);
-        await loadSong(ev);
-        break;
-      }
-      case 'error':
-        bubble.insertAdjacentHTML('beforeend', `<p class="error">${escapeHtml(ev.message)}</p>`);
-        break;
-    }
-  };
-
-  const reader = res.body.getReader();
-  const decoder = new TextDecoder();
-  let buf = '';
-  for (;;) {
-    const { value, done } = await reader.read();
-    if (done) break;
-    buf += decoder.decode(value, { stream: true });
-    let idx;
-    while ((idx = buf.indexOf('\n\n')) >= 0) {
-      const chunk = buf.slice(0, idx);
-      buf = buf.slice(idx + 2);
-      if (chunk.startsWith('data: ')) await handle(JSON.parse(chunk.slice(6)));
-    }
-  }
-  busy = false;
-  sendBtn.disabled = false;
-  input.focus();
+function onSong(song, { play = true } = {}) {
+  addVersion(song);
+  setBadge(song.score, song.pass);
+  showAnalysis(song);
+  loadSong(song, { play });
 }
 
-$('#composer').addEventListener('submit', (e) => {
-  e.preventDefault();
-  const text = input.value;
-  input.value = '';
-  send(text);
-});
-input.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter' && !e.shiftKey) {
-    e.preventDefault();
-    $('#composer').requestSubmit();
-  }
-});
-document.querySelectorAll('.suggestions button').forEach((b) => b.addEventListener('click', () => send(b.textContent)));
+const events = new EventSource('/api/events');
+events.onmessage = (e) => {
+  const ev = JSON.parse(e.data);
+  if (ev.type === 'song') onSong(ev);
+};
+
+// Restore the last published song after a reload (without auto-playing).
+fetch('/api/song')
+  .then((r) => r.json())
+  .then((song) => song && onSong(song, { play: false }))
+  .catch(() => {});
+
+// Report editor contents so Claude can build on the user's own edits.
+setInterval(async () => {
+  const code = (await editor()).code;
+  if (code === lastReported) return;
+  lastReported = code;
+  fetch('/api/editor', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ code }) }).catch(() => {
+    lastReported = null;
+  });
+}, 1500);
 
 // ------------------------------------------------------------ editor toolbar
 
@@ -260,7 +160,8 @@ versionsEl.onchange = () => {
   const v = versions[Number(versionsEl.value)];
   if (v) {
     loadSong(v);
-    setBadge(v.score, !v.warning);
+    setBadge(v.score, v.pass);
+    showAnalysis(v);
   }
 };
 $('#score').onclick = async (e) => {
@@ -292,6 +193,6 @@ editor().then((ed) => ed.setLineWrappingEnabled(window.matchMedia('(max-width: 8
 fetch('/api/status')
   .then((r) => r.json())
   .then((s) => {
-    $('#status').textContent = `${s.model} · ${s.knowledge.docs} doc sections · ${s.knowledge.functions} functions · ${s.knowledge.examples} examples${s.apiKey ? '' : ' · ⚠ ANTHROPIC_API_KEY not set'}`;
+    $('#status').textContent = `${s.knowledge.docs} doc sections · ${s.knowledge.functions} functions · ${s.knowledge.examples} examples · pass mark ${s.passScore}`;
   })
   .catch(() => {});

@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Strudel Composer</title>
+  <link rel="stylesheet" href="/vendor/xterm/css/xterm.css">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -12,22 +13,14 @@
     <span id="status" class="muted"></span>
   </header>
   <main>
-    <section id="chat-panel" aria-label="Chat">
-      <div id="messages">
-        <div class="msg assistant intro">
-          <p>Tell me what you'd like to hear: a genre, a mood, a tempo, instruments, a reference. I'll write it in Strudel, render and score it, iterate until it's musical, then load it into the editor.</p>
-          <div class="suggestions">
-            <button>Deep house at 122 bpm with a warm Rhodes and a rolling bassline</button>
-            <button>Lo-fi hip hop beat with swung drums and jazzy chords</button>
-            <button>Ambient drone that slowly evolves, like a foggy morning</button>
-            <button>Jungle / drum &amp; bass using a chopped amen break</button>
-          </div>
-        </div>
+    <section id="terminal-panel" aria-label="Claude Code terminal">
+      <div class="toolbar">
+        <span class="dot" id="conn" title="terminal connection"></span>
+        <strong>Claude Code</strong>
+        <span class="muted" id="term-hint">Describe the music you want; songs load on the right.</span>
+        <button id="restart" title="Kill this terminal and start a fresh Claude Code session">Restart</button>
       </div>
-      <form id="composer">
-        <textarea id="input" rows="3" placeholder="Describe the music, or ask for changes…" required></textarea>
-        <button id="send" type="submit">Send</button>
-      </form>
+      <div id="terminal"></div>
     </section>
     <section id="editor-panel" aria-label="Strudel editor">
       <div class="toolbar">
@@ -37,9 +30,10 @@
         <select id="versions" title="Versions"><option value="">Versions</option></select>
         <span id="badge" class="badge" hidden></span>
       </div>
+      <div id="audio-hint" class="audio-hint" hidden>Click anywhere to enable audio, then press Play.</div>
       <div id="editor-wrap">
         <strudel-editor id="editor"><!--
-// Your song will appear here.
+// Songs from Claude appear here and start playing.
 // Meanwhile, press Play to hear a tiny loop:
 setcps(0.5)
 stack(
@@ -54,6 +48,8 @@ stack(
       </details>
     </section>
   </main>
+  <script src="/vendor/xterm/lib/xterm.js"></script>
+  <script src="/vendor/xterm-fit/lib/addon-fit.js"></script>
   <script type="module" src="/vendor/strudel-repl/index.js"></script>
   <script type="module" src="/app.js"></script>
 </body>

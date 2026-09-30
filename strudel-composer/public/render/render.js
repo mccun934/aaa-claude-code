@@ -1,5 +1,5 @@
 // Headless render harness. Loaded by lib/renderer.mjs inside Chromium.
-// It hosts the same <strudel-editor> the chat UI uses, so the agent tests
+// It hosts the same <strudel-editor> the web UI uses, so tests run
 // exactly the engine, sample maps and soundfonts the user will hear.
 
 const el = document.getElementById('ed');

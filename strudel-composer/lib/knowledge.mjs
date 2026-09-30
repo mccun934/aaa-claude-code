@@ -150,7 +150,10 @@ export class Knowledge {
       );
     }
     for (const pack of packs) {
-      const banks = pack.banks.filter((b) => match(b.name) || match(pack.repo) || (q && match(pack.note)));
+      // Prefer banks whose names match; fall back to the whole pack when the
+      // query only matches its name or description.
+      const named = pack.banks.filter((b) => match(b.name));
+      const banks = named.length ? named : match(pack.repo) || (q && match(pack.note)) ? pack.banks : [];
       if (!banks.length) continue;
       const desc = banks.slice(0, limit).map((b) => {
         const loops = b.loops

@@ -1,7 +1,8 @@
 # Strudel composer's cheatsheet
 
 Hand-written summary for the composing agent. For details, search the
-ingested docs (`search_docs`) and API reference (`lookup_function`).
+ingested docs (`node scripts/strudel.mjs docs <query>`) and API reference
+(`node scripts/strudel.mjs fn <name>`).
 
 ## Program shape
 
@@ -48,7 +49,7 @@ in one key: prefer `n("...").scale("Key:mode")` for melodies/basslines and
 
 - Drums: `s("bd sd hh oh cp rim lt mt ht cr rd sh cb tb perc")`, then `.bank("RolandTR909")` (or TR808, TR707, LinnDrum, AkaiMPC60, …). `n("0 1 2")` or `"hh:3"` picks a variant.
 - Synths (pitched via `note`/`n`): `sine triangle square sawtooth supersaw pulse`, noise: `white pink brown crackle`.
-- Pitched samples / soundfonts: `piano`, `gm_epiano1`, `gm_acoustic_bass`, `gm_string_ensemble_1`, `gm_pad_warm`, `gm_vibraphone`, … (see `find_sounds`). Soundfont variants: `"gm_epiano1:2"`.
+- Pitched samples / soundfonts: `piano`, `gm_epiano1`, `gm_acoustic_bass`, `gm_string_ensemble_1`, `gm_pad_warm`, `gm_vibraphone`, … (see `node scripts/strudel.mjs sounds <query>`). Soundfont variants: `"gm_epiano1:2"`.
 - Notes: `note("c3 eb3 g3")` or MIDI numbers `note("48 51 55")`. Default octave is 3.
 - Scales: `n("0 2 4 6").scale("D:dorian")` (degrees, 0-based, any octave via e.g. `"C4:minor"`). Modes: major minor dorian phrygian lydian mixolydian locrian, `minor:pentatonic`, `major:pentatonic`, `harmonic minor`, `melodic minor`, `blues`, `whole tone`, `chromatic`.
 - Chords: `chord("<C^7 Am7 Dm7 G7>").voicing()` (`^7` = maj7, `m7`, `7`, `m9`, `sus`, `o` = dim, `h` = half-dim). `.anchor("C5")` sets voicing height, `.mode("below")`, `.dict('ireal')`. Bass from chords: `n("0").set(chords).mode("root:g2").voicing()`.
@@ -66,7 +67,7 @@ s("breaks152").splice(8, "0 1 2 3 4 5 6 7")       // like slice but time-stretch
 s("sesame").fit().scrub("{0 .25 .5 .75}%8")       // jump around inside a loop
 ```
 
-`find_sounds("break")` lists loop packs with durations and tempo guesses; choose
+`node scripts/strudel.mjs sounds break` lists loop packs with durations and tempo guesses; choose
 `setcps` so the loop's natural tempo matches (bpm/60/4 per bar).
 
 ## Effects (all patternable: `.lpf("<400 800 1600>")`)
@@ -76,7 +77,7 @@ s("sesame").fit().scrub("{0 .25 .5 .75}%8")       // jump around inside a loop
 - Level: `.gain(.8)`, `.velocity(".8 .5")`, `.postgain(1.2)`; keep total level sane (≤ ~5 layers at gain ≤ 1).
 - Space: `.room(.4).size(4)`, `.delay(.3).delaytime(3/16).delayfeedback(.4)`, `.pan(sine.slow(4))`, `.orbit(2)` separates effect buses.
 - Color: `.shape(.3)`, `.distort(2)`, `.crush(6)`, `.coarse(4)`, `.phaser(2)`, `.vowel("<a e i o>")`, `.fm(2).fmh(1.5)`, `.vib(4).vibmod(.2)`.
-- Sidechain feel: put the kick on its own orbit and `.duckorbit(2)` on others (see `lookup_function duckorbit`).
+- Sidechain feel: put the kick on its own orbit and `.duckorbit(2)` on others (see `node scripts/strudel.mjs fn duckorbit`).
 
 ## Pattern transformations (musical variation)
 
@@ -102,6 +103,6 @@ s("sesame").fit().scrub("{0 .25 .5 .75}%8")       // jump around inside a loop
 
 - Chaining after a string: write `note("c e").fast(2)` not `"c e".fast(2).note()` unless you know it's valid (in the REPL, double-quoted strings are patterns, so `"c e".fast(2)` does work, but single-quoted strings are plain JS strings).
 - `.scale()` applies to `n()` degrees, not to `note()` names.
-- Unknown sound names are silent. Check with `find_sounds` first.
+- Unknown sound names are silent. Check with `node scripts/strudel.mjs sounds <name>` first.
 - Visual functions (`.pianoroll()`, `._scope()`) are fine in the editor but add nothing to the sound.
 - `samples(...)` must come before the patterns that use it.

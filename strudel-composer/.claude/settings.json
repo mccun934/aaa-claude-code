@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node scripts/strudel.mjs:*)",
+      "Edit(songs/**)",
+      "Read(songs/**)",
+      "Read(knowledge/**)"
+    ]
+  }
+}

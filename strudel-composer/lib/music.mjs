@@ -389,7 +389,7 @@ export function scoreMusicality({ ok, error, missingSounds = [], events, audio, 
   let score = (100 * Object.keys(sub).reduce((s, k) => s + sub[k] * w[k], 0)) / (total || 1);
   if (missingSounds.length) {
     score *= Math.max(0.25, 1 - 0.25 * missingSounds.length);
-    issues.unshift(`Sounds not found (these parts are silent): ${missingSounds.join(', ')}. Use find_sounds to pick valid names, or load the pack with samples('github:...').`);
+    issues.unshift(`Sounds not found (these parts are silent): ${missingSounds.join(', ')}. Look up valid names with: node scripts/strudel.mjs sounds <query>, or load the pack with samples('github:...').`);
   }
   if (m.roughness > 0.35) score *= 0.8;
   if (audio) score *= 1 - 0.5 * ramp(audio.clipRatio, 0.003, 0.05);
